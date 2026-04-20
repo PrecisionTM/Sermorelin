@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Sermorelin Peptide Therapy | Precision Telemed</title>
+  <meta name="description" content="Restore your body's natural growth hormone production with Sermorelin peptide therapy — prescribed by board-certified doctors, delivered to your door. $199/mo flat rate." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" />
+
+  <style>
+    /* ─────────────────────────────────────────────
+       CSS CUSTOM PROPERTIES — Precision Telemed Theme
+    ───────────────────────────────────────────── */
+    :root {
+      --color-bg:          #fdfbf7;
+      --color-bg-alt:      #f5f2ec;
+      --color-card:        #ffffff;
+      --color-fg:          hsl(150, 18%, 25%);
+      --color-fg-muted:    hsl(150, 10%, 45%);
+      --color-primary:     #788C75;
+      --color-primary-rgb: 120, 140, 117;
+      --color-primary-dk:  #5a6b58;
+      --color-primary-lt:  #9aab97;
+      --color-border:      hsl(40, 20%, 88%);
+      --color-accent-gold: hsl(43, 60%, 52%);
+      --color-accent-sage: #788C75;
+      --color-white:       #ffffff;
+      --color-dark:        hsl(150, 15%, 20%);
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+      --section-gap:  clamp(2rem, 4vw, 3.5rem);
+      --container:    1280px;
+      --radius-sm:    0.5rem;
+      --radius-md:    1rem;
+      --radius-lg:    1.5rem;
+      --radius-xl:    2rem;
+      --radius-full:  9999px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.04);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,.12), 0 4px 12px rgba(0,0,0,.06);
+      --shadow-xl: 0 24px 64px rgba(0,0,0,.16), 0 8px 24px rgba(0,0,0,.08);
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-fg); line-height: 1.6; }
+    #page-wrap { overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem); }
+    .section { padding: var(--section-gap) 0; }
+    .section--alt { background: var(--color-bg-alt); }
+
+    .eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-size: .6875rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--color-primary); }
+    .eyebrow--light { color: var(--color-primary-lt); }
+    .eyebrow__dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: currentColor; flex-shrink: 0; }
+
+    .heading-xl { font-family: var(--font-heading); font-size: clamp(2.5rem, 6vw, 5.25rem); font-weight: 700; line-height: 1.05; letter-spacing: -.02em; }
+    .heading-lg { font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3.75rem); font-weight: 700; line-height: 1.1; letter-spacing: -.02em; }
+    .heading-md { font-family: var(--font-heading); font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 600; line-height: 1.2; }
+    .text-muted { color: var(--color-fg-muted); }
+
+    /* ── BUTTONS ── */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; font-family: var(--font-body); font-size: .9375rem; font-weight: 600; line-height: 1; padding: 1rem 2.25rem; border-radius: var(--radius-full); border: 2px solid transparent; cursor: pointer; transition: all .28s var(--ease-out-expo); white-space: nowrap; text-align: center; letter-spacing: .01em; }
+    .btn--primary { background: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
+    .btn--primary:hover { background: var(--color-fg); color: var(--color-white); border-color: var(--color-fg); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(var(--color-primary-rgb), .35); }
+    .btn--outline { background: transparent; color: var(--color-fg); border-color: var(--color-border); }
+    .btn--outline:hover { border-color: var(--color-primary); color: var(--color-primary); transform: translateY(-2px); }
+    .btn--white { background: var(--color-white); color: var(--color-fg); border-color: var(--color-white); }
+    .btn--white:hover { background: var(--color-bg); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .btn--ghost-white { background: rgba(255,255,255,.12); color: var(--color-white); border-color: rgba(255,255,255,.3); backdrop-filter: blur(8px); }
+    .btn--ghost-white:hover { background: rgba(255,255,255,.22); transform: translateY(-2px); }
+    .btn--lg { padding: 1.2rem 2.75rem; font-size: 1.0625rem; }
+    .btn--sm { padding: .6rem 1.4rem; font-size: .8125rem; }
+    .btn__arrow { transition: transform .25s var(--ease-out-expo); }
+    .btn:hover .btn__arrow { transform: translateX(4px); }
+    @keyframes cta-pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(var(--color-primary-rgb),.4); } 50% { box-shadow: 0 0 0 12px rgba(var(--color-primary-rgb),0); } }
+    .btn--pulse { animation: cta-pulse 2.5s ease-in-out infinite; }
+
+    /* ── REVEAL ANIMATIONS ── */
+    .reveal { opacity: 1; transform: translateY(0); transition: opacity .7s var(--ease-out-expo), transform .7s var(--ease-out-expo); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal--left { transform: translateX(-28px); }
+    .reveal--left.visible { transform: translateX(0); }
+    .reveal--right { transform: translateX(28px); }
+    .reveal--right.visible { transform: translateX(0); }
+    .delay-1 { transition-delay: .1s; }
+    .delay-2 { transition-delay: .2s; }
+    .delay-3 { transition-delay: .3s; }
+    .delay-4 { transition-delay: .4s; }
+    .delay-5 { transition-delay: .5s; }
+
+    /* ── TRUST BAR ── */
+    #trust-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(17,27,20,0.97); border-bottom: 1px solid rgba(103,112,93,.4); backdrop-filter: blur(16px); height: 2.5rem; display: flex; align-items: center; overflow: hidden; }
+    .trust-bar__track { display: flex; align-items: center; white-space: nowrap; animation: marquee 24s linear infinite; }
+    .trust-bar__item { display: inline-flex; align-items: center; gap: .5rem; padding: 0 2.5rem; font-size: .6875rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.75); }
+    .trust-bar__item i { color: var(--color-primary-lt); font-size: .625rem; }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ── NAVBAR ── */
+    #navbar { position: fixed; top: 2.5rem; left: 0; right: 0; z-index: 90; height: 4.25rem; background: rgba(253,251,247,0.0); transition: background .35s, box-shadow .35s; }
+    #navbar.scrolled { background: rgba(253,251,247,0.92); box-shadow: 0 1px 0 var(--color-border), 0 4px 20px rgba(0,0,0,.06); backdrop-filter: blur(20px); }
+    .navbar__inner { height: 100%; display: flex; align-items: center; gap: 1.5rem; }
+    .navbar__logo img { height: 2rem; width: auto; }
+    .navbar__links { display: none; list-style: none; gap: 1.75rem; align-items: center; margin-left: 1rem; }
+    @media (min-width: 1024px) { .navbar__links { display: flex; } }
+    .navbar__links a { font-size: .875rem; font-weight: 500; color: rgba(255,255,255,.8); transition: color .2s; }
+    #navbar.scrolled .navbar__links a { color: var(--color-fg-muted); }
+    .navbar__links a:hover { color: var(--color-white); }
+    #navbar.scrolled .navbar__links a:hover { color: var(--color-primary); }
+    .navbar__ctas { display: none; align-items: center; gap: .875rem; margin-left: auto; }
+    @media (min-width: 1024px) { .navbar__ctas { display: flex; } }
+    .navbar__hamburger { display: flex; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: .5rem; margin-left: auto; }
+    @media (min-width: 1024px) { .navbar__hamburger { display: none; } }
+    .navbar__hamburger span { display: block; width: 22px; height: 2px; background: var(--color-white); border-radius: 2px; transition: background .3s; }
+    #navbar.scrolled .navbar__hamburger span { background: var(--color-fg); }
+    .mobile-nav { position: fixed; top: 6.75rem; left: 0; right: 0; z-index: 88; background: rgba(253,251,247,0.97); backdrop-filter: blur(20px); border-bottom: 1px solid var(--color-border); padding: 1.5rem clamp(1.25rem,4vw,3rem); transform: translateY(-110%); opacity: 0; transition: transform .4s var(--ease-out-expo), opacity .4s; pointer-events: none; }
+    .mobile-nav.open { transform: translateY(0); opacity: 1; pointer-events: all; }
+    .mobile-nav ul { list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; }
+    .mobile-nav ul li a { font-size: 1rem; font-weight: 500; color: var(--color-fg); transition: color .2s; }
+    .mobile-nav ul li a:hover { color: var(--color-primary); }
+    .mobile-nav__ctas { display: flex; flex-direction: column; gap: .75rem; }
+
+    /* ── HERO ── */
+    #hero { position: relative; min-height: clamp(560px, 60vw, 860px); height: auto; display: flex; align-items: center; padding-top: 0.5rem; padding-bottom: 2rem; overflow: hidden; }
+    .hero__bg { position: absolute; inset: 0; z-index: 0; }
+    .hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 70% center; }
+    .hero__overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to right, rgba(10,22,14,.85) 0%, rgba(10,22,14,.50) 45%, rgba(10,22,14,.10) 100%), linear-gradient(to top, rgba(10,22,14,.40) 0%, transparent 50%); }
+    .hero__content { position: relative; z-index: 2; max-width: 680px; }
+    .hero__badge { display: block; margin-bottom: 1rem; }
+    .hero__badge-eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-size: .6875rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--color-primary-lt); margin-bottom: .75rem; }
+    .hero__badge-dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--color-primary-lt); box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb),.3); animation: pulse-glow 2s ease-in-out infinite; flex-shrink: 0; }
+    .hero__badge-divider { display: inline-block; width: 1px; height: .75rem; background: rgba(var(--color-primary-rgb),.5); margin: 0 .25rem; vertical-align: middle; }
+    .hero__badge-sub { color: rgba(255,255,255,.45); font-weight: 500; }
+    .hero__badge-heading { font-family: var(--font-heading); font-size: clamp(3rem, 7vw, 6rem); font-weight: 700; line-height: 1; letter-spacing: -.03em; color: var(--color-white); display: block; }
+    @keyframes pulse-glow { 0%,100% { box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb),.3); } 50% { box-shadow: 0 0 0 7px rgba(var(--color-primary-rgb),0); } }
+    /* Trustpilot hero badge */
+    .hero__trustpilot {
+      display: inline-flex;
+      align-items: center;
+      gap: .375rem;
+      margin-bottom: 1.25rem;
+      width: fit-content;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .hero__trustpilot:hover { opacity: .75; }
+    .hero__tp-excellent {
+      font-size: .75rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.9);
+      white-space: nowrap;
+      letter-spacing: .01em;
+    }
+    .hero__tp-stars {
+      display: inline-flex;
+      gap: 2px;
+      align-items: center;
+      line-height: 0;
+    }
+    .hero__tp-star {
+      display: block;
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+    .hero__tp-star svg {
+      width: 16px;
+      height: 16px;
+      display: block;
+    }
+    .hero__tp-divider {
+      width: 1px;
+      height: 12px;
+      background: rgba(255,255,255,.25);
+      flex-shrink: 0;
+    }
+    .hero__tp-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .hero__tp-wordmark {
+      font-size: .7rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.85);
+      white-space: nowrap;
+      letter-spacing: .01em;
+    }
+    .hero__title { font-family: var(--font-heading); font-size: clamp(1.25rem, 2.5vw, 2rem); font-weight: 400; line-height: 1.3; letter-spacing: -.01em; color: #c8d4c6; margin-bottom: 1.5rem; font-style: italic; }
+    .hero__title em { font-style: normal; font-weight: 600; color: rgba(255,255,255,.85); }
+    .hero__subtitle { font-size: clamp(.9375rem, 1.6vw, 1.0625rem); color: rgba(255,255,255,.7); line-height: 1.7; margin-bottom: 1.25rem; max-width: 560px; }
+        .hero__ctas { display: flex; flex-wrap: wrap; gap: .875rem; margin-bottom: 0; }
+    .hero__pills { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .hero__pill { display: inline-flex; align-items: center; gap: .4rem; font-size: .675rem; font-weight: 500; color: rgba(255,255,255,.6); background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.13); border-radius: var(--radius-full); padding: .3rem .75rem; }
+
+    .hero__pill i { color: var(--color-primary-lt); font-size: .6rem; }
+    .hero__injection-note { display: inline-flex; align-items: center; gap: .6rem; margin-top: 1.25rem; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: var(--radius-full); padding: .45rem 1rem; font-size: .8rem; color: rgba(255,255,255,.75); max-width: 520px; }
+    .hero__injection-note i { color: var(--color-primary-lt); font-size: .875rem; flex-shrink: 0; }
+    .hero__injection-note strong { color: #ffffff; font-weight: 700; }
+
+    /* ── SOCIAL PROOF ── */
+    .social-proof-strip { background: var(--color-primary); padding: 1rem 0; overflow: hidden; }
+    .social-proof-strip__inner { display: flex; flex-wrap: nowrap; align-items: center; justify-content: center; gap: clamp(.75rem,2vw,2rem); }
+    @media (max-width: 640px) {
+      .social-proof-strip__inner { flex-wrap: wrap; gap: .5rem 1.25rem; justify-content: center; }
+      .sp-item { flex: 0 0 calc(50% - 1.25rem); justify-content: center; }
+      .sp-divider { display: none; }
+    }
+    .sp-item { display: flex; align-items: center; gap: .4rem; font-size: .75rem; color: rgba(255,255,255,.65); white-space: nowrap; flex-shrink: 0; }
+    .sp-item i { color: var(--color-primary-lt); font-size: .875rem; }
+    .sp-item strong { color: var(--color-white); }
+    .sp-divider { width: 1px; height: 1rem; background: rgba(255,255,255,.2); flex-shrink: 0; }
+
+    /* ── SCIENCE / MECHANISM ── */
+    .science-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: stretch; }
+    @media (min-width: 900px) { .science-grid { grid-template-columns: 1fr 1fr; gap: 3.5rem; } }
+    .science-visual { position: relative; border-radius: var(--radius-xl); overflow: hidden; min-height: 340px; height: 100%; }
+    @media (max-width: 899px) { .science-visual { height: 340px; } }
+    .science-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+    .science-visual__badge { position: absolute; bottom: 1rem; left: 1rem; right: 1rem; background: rgba(10,22,14,0.85); backdrop-filter: blur(12px); border-radius: var(--radius-md); padding: .75rem 1rem; border: 1px solid rgba(255,255,255,.1); }
+    .science-visual__badge-title { font-family: var(--font-heading); font-size: .9rem; font-weight: 700; color: var(--color-white); margin-bottom: .15rem; }
+    .science-visual__badge-sub { font-size: .675rem; color: rgba(255,255,255,.5); letter-spacing: .04em; }
+    .science-content { display: flex; flex-direction: column; justify-content: center; gap: 1rem; }
+    .data-bars-block { display: flex; flex-direction: column; gap: .6rem; }
+    .mechanism-cards { display: grid; grid-template-columns: 1fr 1fr; gap: .625rem; }
+    @media (max-width: 480px) { .mechanism-cards { grid-template-columns: 1fr; } }
+    .mechanism-card { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: .875rem 1rem; transition: border-color .3s, box-shadow .3s; }
+    .mechanism-card:hover { border-color: rgba(var(--color-primary-rgb),.4); box-shadow: var(--shadow-sm); }
+    .mechanism-card__icon { width: 1.75rem; height: 1.75rem; background: rgba(var(--color-primary-rgb),.12); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-size: .75rem; margin-bottom: .5rem; }
+    .mechanism-card h4 { font-family: var(--font-heading); font-size: .8125rem; font-weight: 700; margin-bottom: .3rem; }
+    .mechanism-card p { font-size: .75rem; color: var(--color-fg-muted); line-height: 1.5; margin: 0; }
+    .science-footnotes { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--color-border); }
+    .science-footnotes__label { font-size: .6875rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--color-primary); margin-bottom: .5rem; display: flex; align-items: center; gap: .4rem; }
+    .science-footnotes__list { list-style: decimal; padding-left: 1.1rem; display: flex; flex-direction: column; gap: .35rem; margin: 0; }
+    .science-footnotes__list li { font-size: .7rem; color: var(--color-fg-muted); line-height: 1.5; }
+    .science-footnotes__list a { color: var(--color-fg-muted); text-decoration: underline; text-decoration-color: rgba(var(--color-primary-rgb),.4); text-underline-offset: 2px; transition: color .2s; }
+    .science-footnotes__list a:hover { color: var(--color-primary); text-decoration-color: var(--color-primary); }
+    .science-footnotes__list em { font-style: italic; }
+
+    /* ── STATS BAND ── */
+    .stats-band { background: linear-gradient(135deg, var(--color-primary-dk) 0%, var(--color-fg) 100%); padding: 4rem 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 2rem; text-align: center; }
+    @media (min-width: 768px) { .stats-grid { grid-template-columns: repeat(4,1fr); } }
+    .stat-item__num { font-family: var(--font-heading); font-size: clamp(2.5rem,5vw,4rem); font-weight: 700; color: var(--color-white); line-height: 1; margin-bottom: .375rem; }
+    .stat-item__label { font-size: .8125rem; color: rgba(255,255,255,.6); font-weight: 500; letter-spacing: .03em; }
+
+    /* ── BENEFITS ── */
+    .benefits-grid { display: grid; grid-template-columns: 1fr; gap: 4rem; align-items: center; }
+    @media (min-width: 900px) { .benefits-grid { grid-template-columns: 1fr 1fr; } }
+    .benefits-list { list-style: none; display: flex; flex-direction: column; gap: 1.5rem; }
+    .benefit-item { display: flex; align-items: flex-start; gap: 1rem; }
+    .benefit-item__icon { width: 2.5rem; height: 2.5rem; flex-shrink: 0; background: rgba(var(--color-primary-rgb),.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-size: 1rem; border: 1px solid rgba(var(--color-primary-rgb),.15); }
+    .benefit-item__text strong { display: block; font-weight: 600; margin-bottom: .25rem; }
+    .benefit-item__text span { font-size: .875rem; color: var(--color-fg-muted); line-height: 1.6; }
+    .benefits-visual { position: relative; border-radius: var(--radius-xl); overflow: hidden; height: 480px; }
+    @media (min-width: 900px) { .benefits-visual { height: auto; min-height: 400px; } }
+    .benefits-visual img { width: 100%; height: 100%; object-fit: cover; }
+    .benefits-visual__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,22,14,.3) 0%, transparent 60%); }
+
+    /* ── HOW IT WORKS ── */
+    .steps-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+    @media (min-width: 768px) { .steps-grid { grid-template-columns: repeat(3,1fr); } }
+    .step-card { position: relative; background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 2.25rem 1.75rem; overflow: hidden; transition: border-color .3s, box-shadow .3s, transform .35s var(--ease-out-expo); }
+    .step-card:hover { border-color: rgba(var(--color-primary-rgb),.35); box-shadow: var(--shadow-md); transform: translateY(-6px); }
+    .step-card__num { position: absolute; top: 1.25rem; right: 1.5rem; font-family: var(--font-heading); font-size: 5rem; font-weight: 700; color: rgba(var(--color-primary-rgb),.07); line-height: 1; pointer-events: none; }
+    .step-card__icon-wrap { width: 3rem; height: 3rem; border-radius: var(--radius-md); background: rgba(var(--color-primary-rgb),.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-size: 1.125rem; margin-bottom: 1.25rem; }
+    .step-card h3 { font-family: var(--font-heading); font-size: 1.2rem; font-weight: 600; margin-bottom: .625rem; }
+    .step-card p { font-size: .875rem; color: var(--color-fg-muted); line-height: 1.7; }
+
+    /* ── BENEFITS HIGHLIGHT CARDS (age/hormone section) ── */
+    .highlight-cards { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 2rem; }
+    @media (min-width: 640px) { .highlight-cards { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .highlight-cards { grid-template-columns: repeat(4, 1fr); } }
+    .highlight-card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.75rem 1.5rem; text-align: center; transition: border-color .3s, box-shadow .3s, transform .35s var(--ease-out-expo); }
+    .highlight-card:hover { border-color: rgba(var(--color-primary-rgb),.35); box-shadow: var(--shadow-md); transform: translateY(-5px); }
+    .highlight-card__icon { width: 3rem; height: 3rem; background: rgba(var(--color-primary-rgb),.1); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-size: 1.25rem; margin: 0 auto 1rem; border: 1px solid rgba(var(--color-primary-rgb),.15); }
+    .highlight-card h4 { font-family: var(--font-heading); font-size: 1rem; font-weight: 600; margin-bottom: .4rem; }
+    .highlight-card p { font-size: .8rem; color: var(--color-fg-muted); line-height: 1.6; }
+
+    /* ── BEFORE & AFTER ── */
+    .before-after-section { background: var(--color-bg); padding: 1rem 0 clamp(1.5rem,3.5vw,3rem); }
+    .before-after-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 900px; margin: 0 auto; }
+    @media (max-width: 640px) { .before-after-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
+    .ba-card { border-radius: var(--radius-xl); overflow: hidden; position: relative; box-shadow: var(--shadow-md); border: 1px solid var(--color-border); }
+    .ba-card img { width: 100%; height: auto; display: block; transition: transform .5s var(--ease-out-expo); }
+    .ba-card:hover img { transform: scale(1.02); }
+    .ba-card__label { position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); background: rgba(10,22,14,.72); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,.15); border-radius: var(--radius-full); padding: .35rem 1.1rem; font-size: .75rem; font-weight: 700; letter-spacing: .07em; color: var(--color-white); white-space: nowrap; }
+    .ba-card__label i { color: var(--color-primary-lt); margin-right: .35rem; }
+
+    /* ── PRICING ── */
+    .pricing-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; max-width: 520px; margin: 0 auto; }
+    .pricing-card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 2.25rem; position: relative; transition: border-color .3s, box-shadow .3s, transform .35s var(--ease-out-expo); }
+    .pricing-card:hover { border-color: rgba(var(--color-primary-rgb),.35); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .pricing-card--featured { border-color: rgba(var(--color-primary-rgb),.45); box-shadow: var(--shadow-md); }
+    .pricing-card__badge { position: absolute; top: -1px; right: 1.75rem; background: var(--color-primary); color: var(--color-white); font-size: .6875rem; font-weight: 700; letter-spacing: .08em; padding: .3rem .875rem; border-radius: 0 0 var(--radius-full) var(--radius-full); }
+    .pricing-card__dose { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--color-primary); margin-bottom: .35rem; }
+    .pricing-card__title { font-family: var(--font-heading); font-size: 1.375rem; font-weight: 600; margin-bottom: 1rem; }
+    .pricing-card__price { display: flex; align-items: baseline; gap: .25rem; margin-bottom: 1rem; }
+    .pricing-card__price-amount { font-family: var(--font-heading); font-size: 3rem; font-weight: 700; line-height: 1; color: var(--color-fg); }
+    .pricing-card__price-per { font-size: .875rem; color: var(--color-fg-muted); font-weight: 500; }
+    .pricing-card__features { list-style: none; display: flex; flex-direction: column; gap: .75rem; margin-bottom: 1.75rem; }
+    .pricing-card__features li { display: flex; align-items: center; gap: .625rem; font-size: .875rem; }
+    .pricing-card__features li i { color: var(--color-primary); font-size: .8rem; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+    @media (min-width: 640px) { .testimonials-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (min-width: 1024px) { .testimonials-grid { grid-template-columns: repeat(3,1fr); } }
+    .testimonial-card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.875rem; display: flex; flex-direction: column; gap: 1.25rem; transition: border-color .3s, box-shadow .3s, transform .35s var(--ease-out-expo); }
+    .testimonial-card:hover { border-color: rgba(var(--color-primary-rgb),.3); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+    .testimonial-stars { display: flex; gap: .25rem; }
+    .testimonial-stars i { color: var(--color-accent-gold); font-size: .875rem; }
+    .testimonial-quote { font-size: .9375rem; line-height: 1.7; color: var(--color-fg); font-style: italic; flex: 1; }
+    .testimonial-author { display: flex; align-items: center; gap: .875rem; }
+    .testimonial-avatar { width: 2.75rem; height: 2.75rem; border-radius: var(--radius-full); background: rgba(var(--color-primary-rgb),.15); color: var(--color-primary-dk); font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; border: 2px solid rgba(var(--color-primary-rgb),.2); }
+    .testimonial-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    .testimonial-author-name { font-weight: 600; font-size: .875rem; }
+    .testimonial-author-sub { font-size: .75rem; color: var(--color-fg-muted); }
+    .testimonial-loss-badge { background: rgba(var(--color-primary-rgb),.1); color: var(--color-primary-dk); border: 1px solid rgba(var(--color-primary-rgb),.2); border-radius: var(--radius-full); padding: .25rem .7rem; font-size: .7rem; font-weight: 700; white-space: nowrap; }
+
+    /* ── PHARMACY ── */
+    .pharmacy-section { background: var(--color-primary-dk); padding: var(--section-gap) 0; }
+    .pharmacy-grid { display: grid; grid-template-columns: 1fr; gap: 3.5rem; align-items: center; }
+    @media (min-width: 900px) { .pharmacy-grid { grid-template-columns: auto 1fr; gap: 5rem; } }
+    .pharmacy-logo-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius-xl); padding: 3rem 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.25rem; text-align: center; }
+    .pharmacy-logo-sub { font-size: .8rem; color: rgba(255,255,255,.4); letter-spacing: .1em; text-transform: uppercase; }
+    .pharmacy-badge-row { display: flex; flex-wrap: wrap; gap: .625rem; justify-content: center; margin-top: .5rem; }
+    .pharmacy-badge { display: inline-flex; align-items: center; gap: .4rem; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius-full); padding: .35rem .9rem; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+    .pharmacy-badge i { color: var(--color-primary-lt); font-size: .6rem; }
+    .pharmacy-content h2 { font-family: var(--font-heading); font-size: clamp(1.6rem,3vw,2.5rem); font-weight: 600; color: var(--color-white); line-height: 1.1; margin: .75rem 0 1rem; letter-spacing: -.015em; }
+    .pharmacy-content h2 em { font-style: italic; font-weight: 300; color: rgba(255,255,255,.45); }
+    .pharmacy-content p { font-size: .9rem; color: rgba(255,255,255,.5); line-height: 1.75; margin-bottom: 1.75rem; }
+    .pharmacy-list { list-style: none; padding: 0; margin: 0 0 2rem; display: flex; flex-direction: column; gap: .875rem; }
+    .pharmacy-list li { display: flex; align-items: flex-start; gap: .75rem; font-size: .9rem; color: rgba(255,255,255,.65); line-height: 1.5; }
+    .pharmacy-list li i { color: var(--color-primary-lt); font-size: .7rem; margin-top: .3rem; flex-shrink: 0; }
+    .pharmacy-list li strong { color: var(--color-white); font-weight: 600; }
+
+    /* ── AS SEEN IN ── */
+    .as-seen-in { background: var(--color-bg-alt); padding: 2.5rem 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+    .as-seen-label { text-align: center; font-size: .6875rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--color-fg-muted); margin-bottom: 1.5rem; }
+    .as-seen-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(1.25rem,3vw,3rem); }
+    .as-seen-logo { font-family: var(--font-heading); font-size: clamp(.875rem,1.5vw,1.125rem); font-weight: 600; color: var(--color-fg-muted); opacity: .6; transition: opacity .3s, color .3s; white-space: nowrap; }
+    .as-seen-logo:hover { opacity: 1; color: var(--color-primary); }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: .75rem; }
+    .faq-item { border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; background: var(--color-card); }
+    .faq-question { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 1.5rem; font-family: var(--font-body); font-size: .9375rem; font-weight: 600; color: var(--color-fg); background: none; border: none; cursor: pointer; text-align: left; transition: color .2s; }
+    .faq-question:hover { color: var(--color-primary); }
+    .faq-icon { color: var(--color-primary); font-size: .875rem; flex-shrink: 0; transition: transform .3s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .45s var(--ease-out-expo); }
+    .faq-answer p { padding: 0 1.5rem 1.5rem; font-size: .9rem; color: var(--color-fg-muted); line-height: 1.75; }
+
+    /* ── RESULTS TIMELINE ── */
+    .timeline-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 0; }
+    @media (min-width: 640px) { .timeline-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .timeline-grid { grid-template-columns: repeat(4, 1fr); } }
+    .timeline-card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.75rem 1.5rem; text-align: center; transition: border-color .3s, box-shadow .3s, transform .35s var(--ease-out-expo); position: relative; overflow: hidden; }
+    .timeline-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(var(--color-primary-rgb),.04) 0%, transparent 60%); pointer-events: none; }
+    .timeline-card:hover { border-color: rgba(var(--color-primary-rgb),.35); box-shadow: var(--shadow-md); transform: translateY(-5px); }
+    .timeline-card__week { display: inline-block; font-size: .65rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--color-primary); background: rgba(var(--color-primary-rgb),.1); border: 1px solid rgba(var(--color-primary-rgb),.2); border-radius: var(--radius-full); padding: .25rem .75rem; margin-bottom: 1rem; }
+    .timeline-card__icon { width: 3rem; height: 3rem; background: rgba(var(--color-primary-rgb),.1); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-size: 1.2rem; margin: 0 auto 1rem; border: 1px solid rgba(var(--color-primary-rgb),.15); }
+    .timeline-card__title { font-family: var(--font-heading); font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+    .timeline-card__desc { font-size: .8125rem; color: var(--color-fg-muted); line-height: 1.6; }
+    .timeline-footnotes { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--color-border); display: flex; flex-direction: column; gap: .35rem; }
+    .timeline-footnotes p { font-size: .7rem; color: var(--color-fg-muted); line-height: 1.5; }
+    .timeline-footnotes a { color: var(--color-fg-muted); text-decoration: underline; text-decoration-color: rgba(var(--color-primary-rgb),.4); text-underline-offset: 2px; transition: color .2s; }
+    .timeline-footnotes a:hover { color: var(--color-primary); }
+
+    /* ── PRICING COMPARISON ── */
+    .pricing-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 820px; margin: 0 auto; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--color-border); }
+    @media (max-width: 600px) { .pricing-compare { grid-template-columns: 1fr; } }
+    .pricing-compare__old { background: var(--color-bg-alt); padding: 2.25rem 2rem; border-right: 1px solid var(--color-border); }
+    @media (max-width: 600px) { .pricing-compare__old { border-right: none; border-bottom: 1px solid var(--color-border); } }
+    .pricing-compare__old-label { font-size: .625rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--color-fg-muted); margin-bottom: 1rem; }
+    .pricing-compare__old-price-wrap { display: flex; align-items: baseline; gap: .35rem; margin-bottom: .4rem; }
+    .pricing-compare__old-price { font-family: var(--font-heading); font-size: 2.75rem; font-weight: 700; line-height: 1; color: var(--color-fg-muted); opacity: .55; text-decoration: line-through; text-decoration-color: rgba(190,40,40,.6); text-decoration-thickness: 2px; }
+    .pricing-compare__old-per { font-size: .875rem; color: var(--color-fg-muted); opacity: .5; }
+    .pricing-compare__old-source { font-size: .75rem; color: var(--color-fg-muted); opacity: .6; margin-bottom: 1.5rem; }
+    .pricing-compare__new { background: var(--color-card); padding: 2.25rem 2rem; position: relative; }
+    .pricing-compare__new-badge { position: absolute; top: -1px; right: 1.5rem; background: var(--color-primary); color: #fff; font-size: .6rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: .25rem 1rem; border-radius: 0 0 var(--radius-full) var(--radius-full); white-space: nowrap; }
+    .pricing-compare__new-label { font-size: .625rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--color-primary); margin-bottom: 1rem; }
+    .pricing-compare__new-price-wrap { display: flex; align-items: baseline; gap: .35rem; margin-bottom: .4rem; }
+    .pricing-compare__new-price { font-family: var(--font-heading); font-size: 2.75rem; font-weight: 700; line-height: 1; color: var(--color-fg); }
+    .pricing-compare__new-per { font-size: .875rem; color: var(--color-fg-muted); font-weight: 500; }
+    .pricing-compare__new-sub { font-size: .8rem; color: var(--color-fg-muted); margin-bottom: .875rem; }
+    .pricing-compare__savings { display: inline-flex; align-items: center; gap: .35rem; background: rgba(var(--color-primary-rgb),.1); border: 1px solid rgba(var(--color-primary-rgb),.22); color: var(--color-primary-dk); font-size: .7rem; font-weight: 700; padding: .25rem .75rem; border-radius: var(--radius-full); margin-bottom: 1.5rem; }
+    .pricing-compare__divider { width: 100%; height: 1px; background: var(--color-border); margin: 1.25rem 0; }
+    .pricing-compare__feature-list { list-style: none; display: flex; flex-direction: column; gap: .55rem; margin-bottom: 1.5rem; }
+    .pricing-compare__feature-list li { display: flex; align-items: center; gap: .5rem; font-size: .8125rem; color: var(--color-fg-muted); }
+    .pricing-compare__feature-list li i { font-size: .75rem; flex-shrink: 0; }
+    .pricing-compare__feature-list li.yes i { color: var(--color-primary); }
+    .pricing-compare__feature-list li.no i { color: rgba(190,40,40,.65); }
+    .pricing-compare__feature-list li.no span { opacity: .6; }
+
+    /* ── COACH SECTION ── */
+    .coach-section { background: rgba(var(--color-primary-rgb), 0.12); padding: var(--section-gap) 0; overflow: hidden; }
+    .coach-grid { display: grid; grid-template-columns: 1fr; gap: 3.5rem; align-items: center; }
+    @media (min-width: 900px) { .coach-grid { grid-template-columns: auto 1fr; gap: 5rem; } }
+    .coach-photo-wrap { position: relative; width: 280px; margin: 0 auto; }
+    @media (min-width: 900px) { .coach-photo-wrap { margin: 0; } }
+    .coach-photo-wrap img { width: 280px; height: 360px; object-fit: cover; object-position: top center; border-radius: var(--radius-xl); display: block; }
+    .coach-photo__tag { position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); background: var(--color-primary); color: var(--color-white); font-size: .6875rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .35rem 1rem; border-radius: var(--radius-full); white-space: nowrap; }
+    .coach-content h2 { font-family: var(--font-heading); font-size: clamp(1.6rem,3vw,2.5rem); font-weight: 600; color: var(--color-white); line-height: 1.15; margin: .75rem 0 .75rem; }
+    .coach-content > p { font-size: .9rem; color: rgba(255,255,255,.5); line-height: 1.75; margin-bottom: 1.5rem; }
+    .coach-checklist { list-style: none; display: flex; flex-direction: column; gap: .75rem; margin-bottom: 1.75rem; }
+    .coach-checklist li { display: flex; align-items: flex-start; gap: .75rem; font-size: .875rem; color: rgba(255,255,255,.7); }
+    .coach-checklist li i { color: var(--color-primary-lt); margin-top: .15rem; flex-shrink: 0; }
+    .coach-free-tag { display: inline-block; background: rgba(var(--color-primary-rgb),.2); border: 1px solid rgba(var(--color-primary-rgb),.35); color: var(--color-primary-lt); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: .3rem .9rem; border-radius: var(--radius-full); margin-bottom: .75rem; }
+
+    /* ── DOCTORS CAROUSEL ── */
+    .doctors-section { padding: var(--section-gap) 0; background: transparent; overflow: visible; }
+    .doctors-section .eyebrow { color: var(--color-primary-lt); }
+    .doctors-section .eyebrow__dot { background: var(--color-primary-lt); }
+    .doctors-carousel-outer { position: relative; margin-top: 3.5rem; }
+    /* fade edges removed for cleaner look */
+    .doctors-carousel-track-wrap { overflow: visible; cursor: grab; user-select: none; }
+    .doctors-carousel-track-wrap:active { cursor: grabbing; }
+    .doctors-carousel-track { display: flex; gap: 1.5rem; transition: transform .55s var(--ease-out-expo); will-change: transform; }
+    .doctor-card { flex: 0 0 300px; background: var(--color-white); border: 1px solid rgba(var(--color-primary-rgb),.2); border-radius: var(--radius-xl); overflow: hidden; position: relative; transition: border-color .35s, transform .35s var(--ease-out-expo); box-shadow: none; display: flex; flex-direction: column; }
+    .doctor-card:hover { border-color: rgba(var(--color-primary-rgb),.4); transform: translateY(-4px); box-shadow: none; }
+    .doctor-card.active { border-color: rgba(var(--color-primary-rgb),.5); box-shadow: none; }
+    .doctor-card__img-wrap { position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(var(--color-primary-rgb),.3), rgba(var(--color-primary-rgb),.1)); }
+    .doctor-card__img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; transition: transform .5s ease; display: block; }
+    .doctor-card__img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: rgba(var(--color-primary-rgb),.4); }
+    .doctor-card__specialty-badge { position: absolute; top: .875rem; left: .875rem; background: rgba(var(--color-primary-rgb),.85); backdrop-filter: blur(6px); color: white; font-size: .6rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: .3rem .75rem; border-radius: var(--radius-full); }
+    .doctor-card__body { padding: 1.5rem; flex: 1; }
+    .doctor-card__name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: #1a1a1a; margin-bottom: .25rem; }
+    .doctor-card__credentials { font-size: .75rem; font-weight: 600; color: #555555; letter-spacing: .06em; margin-bottom: .875rem; }
+    .doctor-card__bio { font-size: .8125rem; color: #333333; line-height: 1.65; margin-bottom: 1.25rem; }
+    .doctor-card__tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+    .doctor-card__tag { font-size: .6875rem; font-weight: 600; color: #333333; background: rgba(var(--color-primary-rgb),.08); border: 1px solid rgba(var(--color-primary-rgb),.15); padding: .25rem .625rem; border-radius: var(--radius-full); }
+    .doctor-card__footer { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-border); padding: .875rem 1.5rem; gap: .5rem; }
+    .doctor-card__exp { font-size: .75rem; color: #555555; }
+    .doctor-card__exp strong { color: #1a1a1a; font-weight: 700; }
+    .doctor-card__inst { display: flex; align-items: center; justify-content: flex-end; max-width: 140px; } .doctor-card__inst img { display: block; height: 32px; width: auto; max-width: 140px; object-fit: contain; filter: brightness(0) saturate(100%) invert(56%) sepia(14%) saturate(451%) hue-rotate(72deg) brightness(88%) contrast(87%); }
+    .carousel-controls { display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-top: 2.5rem; }
+    .carousel-btn { width: 3rem; height: 3rem; border-radius: var(--radius-full); border: 1.5px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color: rgba(255,255,255,.7); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1rem; transition: all .25s var(--ease-out-expo); }
+    .carousel-btn:hover { border-color: rgba(var(--color-primary-rgb),.6); background: rgba(var(--color-primary-rgb),.15); color: var(--color-white); transform: scale(1.08); }
+    .carousel-btn:disabled { opacity: .3; cursor: not-allowed; transform: none; }
+    .carousel-dots { display: flex; align-items: center; gap: .5rem; }
+    .carousel-dot { width: 8px; height: 8px; border-radius: var(--radius-full); background: rgba(255,255,255,.2); cursor: pointer; transition: all .3s var(--ease-out-expo); border: none; }
+    .carousel-dot.active { width: 24px; background: var(--color-primary-lt); }
+    .carousel-progress { position: absolute; bottom: -1.5rem; left: 0; right: 0; height: 2px; background: rgba(255,255,255,.08); border-radius: var(--radius-full); overflow: hidden; }
+    .carousel-progress-bar { height: 100%; background: linear-gradient(to right, var(--color-primary-dk), var(--color-primary-lt)); border-radius: var(--radius-full); transition: width .55s var(--ease-out-expo); }
+    .doctors-drag-hint { text-align: center; margin-top: 1rem; font-size: .75rem; color: rgba(255,255,255,.3); display: flex; align-items: center; justify-content: center; gap: .5rem; }
+
+    /* ── DATA BARS ── */
+    .data-bar-row { margin-bottom: 1.5rem; }
+    .data-bar-label { display: flex; justify-content: space-between; font-size: .875rem; font-weight: 600; margin-bottom: .5rem; }
+    .data-bar-track { height: 10px; background: var(--color-border); border-radius: var(--radius-full); overflow: hidden; }
+    .data-bar-fill { height: 100%; border-radius: var(--radius-full); background: linear-gradient(to right, var(--color-primary-dk), var(--color-primary-lt)); width: 0; transition: width 1.2s var(--ease-out-expo); }
+    .counter { display: inline; }
+
+    /* ── FINAL CTA ── */
+    .final-cta { position: relative; background: var(--color-primary-dk); overflow: hidden; padding: clamp(3rem,6vw,5rem) 0; }
+    .final-cta__bg { position: absolute; inset: 0; z-index: 0; }
+    .final-cta__bg img { width: 100%; height: 100%; object-fit: cover; opacity: .18; }
+    .final-cta__glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 700px; height: 400px; background: radial-gradient(ellipse, rgba(var(--color-primary-rgb),.25) 0%, transparent 70%); z-index: 1; pointer-events: none; }
+    .final-cta__inner { position: relative; z-index: 2; text-align: center; max-width: 680px; margin: 0 auto; }
+    .final-cta__title { font-family: var(--font-heading); font-size: clamp(2.5rem,5vw,4.5rem); font-weight: 700; color: var(--color-white); line-height: 1.05; margin-bottom: 1.25rem; letter-spacing: -.02em; }
+    .final-cta__sub { font-size: clamp(.9375rem,1.5vw,1.0625rem); color: rgba(255,255,255,.65); line-height: 1.7; margin-bottom: 2.5rem; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .final-cta__ctas { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2.5rem; }
+    .final-cta__trust { display: flex; flex-wrap: wrap; gap: 1.25rem 2rem; justify-content: center; }
+    .fct-item { display: flex; align-items: center; gap: .5rem; font-size: .8125rem; font-weight: 500; color: rgba(255,255,255,.55); }
+    .fct-item i { color: var(--color-primary-lt); font-size: .875rem; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--color-primary-dk); color: rgba(255,255,255,.7); padding: 4rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 3rem; }
+    @media (min-width: 640px) { .footer-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (min-width: 1024px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; } }
+    .footer-brand__logo { font-family: var(--font-heading); font-size: 1.375rem; font-weight: 700; color: var(--color-white); margin-bottom: 1rem; }
+    .footer-brand p { font-size: .875rem; line-height: 1.65; max-width: 280px; }
+    .footer-stars { margin-top: 1.25rem; font-size: .8125rem; }
+    .footer-stars span { color: #f5a623; }
+    footer h4 { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 1rem; }
+    footer ul { list-style: none; display: flex; flex-direction: column; gap: .625rem; }
+    footer ul li a { font-size: .875rem; color: rgba(255,255,255,.65); transition: color .2s; }
+    footer ul li a:hover { color: var(--color-white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 1.75rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+    .footer-bottom p { font-size: .75rem; color: rgba(255,255,255,.35); }
+    .footer-disclaimer { font-size: .6875rem; color: rgba(255,255,255,.25); text-align: center; margin-top: 1rem; line-height: 1.6; }
+
+    @media (max-width: 640px) { .hero__ctas .btn--lg { padding: 1rem 1.75rem; font-size: .9375rem; } }
+
+
+
+    /* ── WORKOUT SECTION ── */
+    .workout-section { background: hsl(40,20%,96%); padding: var(--section-gap) 0; }
+    .workout-header { text-align: center; max-width: 540px; margin: 0 auto 2.5rem; }
+    .workout-header .eyebrow-pill { display: inline-flex; align-items: center; gap: .5rem; background: rgba(var(--color-primary-rgb),.15); border: 1px solid rgba(var(--color-primary-rgb),.25); border-radius: var(--radius-full); padding: .35rem 1rem; font-size: .6875rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--color-primary); margin-bottom: 1.25rem; }
+    .workout-header h2 { font-family: var(--font-heading); font-size: clamp(2rem,4vw,3rem); font-weight: 700; color: var(--color-fg); line-height: 1.1; margin-bottom: 1rem; }
+    .workout-header p { font-size: .9375rem; color: var(--color-fg-muted); line-height: 1.75; margin-bottom: 1.5rem; }
+    .workout-free-badge { display: inline-flex; align-items: center; gap: .5rem; background: rgba(var(--color-primary-rgb),.12); border: 1px solid rgba(var(--color-primary-rgb),.25); border-radius: var(--radius-full); padding: .4rem 1.1rem; font-size: .7rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--color-primary-dk); }
+    .workout-programs-label { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--color-fg); text-align: center; margin-bottom: 1.25rem; }
+    .workout-cards { display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 680px; margin: 0 auto; }
+    .workout-card { background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1rem; box-shadow: var(--shadow-sm); transition: box-shadow .2s, transform .2s; }
+    .workout-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .workout-card--half { flex-direction: column; align-items: center; text-align: center; padding: 1.75rem 1.25rem; }
+    .workout-cards-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 680px; margin: 1rem auto 0; }
+    .workout-card__icon { width: 52px; height: 52px; border-radius: var(--radius-md); background: hsl(40,20%,93%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.25rem; color: var(--color-fg-muted); }
+    .workout-card--half .workout-card__icon { width: 60px; height: 60px; font-size: 1.375rem; margin-bottom: .75rem; }
+    .workout-card__body { flex: 1; }
+    .workout-card__title { font-size: .9375rem; font-weight: 700; color: var(--color-fg); margin-bottom: .2rem; }
+    .workout-card__sub { font-size: .8125rem; color: var(--color-fg-muted); line-height: 1.5; }
+    
+    /* Force dark text in doctors section */
+    .doctors-section * {
+      color: #333333 !important;
+    }
+    .doctors-section h2,
+    .doctors-section .doctor-card__name {
+      color: #1a1a1a !important;
+    }
+    .doctors-section .doctor-card__credentials,
+    .doctors-section .doctor-card__exp,
+    .doctors-section .doctor-card__state {
+      color: #555555 !important;
+    }
+    .doctors-section .doctor-card__bio,
+    .doctors-section .doctor-card__tag {
+      color: #333333 !important;
+    }
+    .doctors-section .doctor-card__exp strong {
+      color: #1a1a1a !important;
+    }
+    .doctors-section .eyebrow {
+      color: #788C75 !important;
+    }
+    .doctors-section .eyebrow__dot {
+      background: #788C75 !important;
+    }
+    .doctors-section i {
+      color: inherit !important;
+    }
+  </style>
+</head>
+
+<body>
+<div id="page-wrap">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-bg.jpg"
+           alt="Couple working out together in gym representing vitality and strength from Sermorelin therapy"
+           loading="eager" fetchpriority="high" />
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container">
+      <div class="hero__content">
+
+        <!-- Trustpilot hero badge -->
+        <a href="https://www.trustpilot.com/review/precisiontelemed.com"
+           target="_blank" rel="noopener"
+           class="hero__trustpilot reveal"
+           style="margin-top:2rem;"
+           aria-label="Precision Telemed — Excellent on Trustpilot">
+          <span class="hero__tp-excellent">Excellent</span>
+          <span class="hero__tp-stars" aria-label="4.7 out of 5 stars">
+            <span class="hero__tp-star"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" fill="#788C75"/><polygon points="20,6 24.5,15.5 35,17 27.5,24 29.5,34 20,29 10.5,34 12.5,24 5,17 15.5,15.5" fill="white"/></svg></span>
+            <span class="hero__tp-star"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" fill="#788C75"/><polygon points="20,6 24.5,15.5 35,17 27.5,24 29.5,34 20,29 10.5,34 12.5,24 5,17 15.5,15.5" fill="white"/></svg></span>
+            <span class="hero__tp-star"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" fill="#788C75"/><polygon points="20,6 24.5,15.5 35,17 27.5,24 29.5,34 20,29 10.5,34 12.5,24 5,17 15.5,15.5" fill="white"/></svg></span>
+            <span class="hero__tp-star"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" fill="#788C75"/><polygon points="20,6 24.5,15.5 35,17 27.5,24 29.5,34 20,29 10.5,34 12.5,24 5,17 15.5,15.5" fill="white"/></svg></span>
+            <span class="hero__tp-star"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" fill="rgba(255,255,255,0.2)"/><rect width="32" height="40" fill="#788C75"/><polygon points="20,6 24.5,15.5 35,17 27.5,24 29.5,34 20,29 10.5,34 12.5,24 5,17 15.5,15.5" fill="white"/></svg></span>
+          </span>
+          <span class="hero__tp-divider" aria-hidden="true"></span>
+          <span class="hero__tp-logo" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;display:block;"><rect width="40" height="40" fill="#788C75"/><polygon points="20,6 24.5,15.5 35,17 27.5,24 29.5,34 20,29 10.5,34 12.5,24 5,17 15.5,15.5" fill="white"/></svg>
+            <span class="hero__tp-wordmark">Trustpilot</span>
+          </span>
+        </a>
+
+        <div class="hero__badge reveal">
+          <span class="hero__badge-heading">Sermorelin<br/>Peptide Therapy</span>
+        </div>
+        <h1 class="hero__title reveal delay-1">
+          Turn Back the Clock on Your Body's <em>Growth Hormone</em>
+        </h1>
+        <p class="hero__subtitle reveal delay-3"><strong style="color:rgba(255,255,255,.95);">$199/mo flat rate.</strong> Prescribed by board-certified doctors. No subscriptions.</p>
+        <div class="hero__ctas reveal delay-4">
+          <a href="https://precisiontelemed.com/start-anti-aging-program-sermorelin/" target="_blank" rel="noopener" class="btn btn--white btn--lg btn--pulse">
+            Check My Eligibility &mdash; Free &nbsp;<i class="fas fa-arrow-right btn__arrow"></i>
+          </a>
+          <a href="#science" class="btn btn--ghost-white btn--lg">Learn the Science</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <div class="social-proof-strip">
+    <div class="container">
+      <div class="social-proof-strip__inner">
+        <div class="sp-item"><i class="fas fa-star-half-stroke"></i><span><strong>4.7/5</strong> Trustpilot</span></div>
+        <div class="sp-divider"></div>
+        <div class="sp-item"><i class="fas fa-users"></i><span><strong>5,000+</strong> Patients</span></div>
+        <div class="sp-divider"></div>
+        <div class="sp-item"><i class="fas fa-user-doctor"></i><span><strong>Board-Certified</strong> Physicians</span></div>
+        <div class="sp-divider"></div>
+        <div class="sp-item"><i class="fas fa-flask"></i><span><strong>503B</strong> Licensed Pharmacy</span></div>
+        <div class="sp-divider"></div>
+        <div class="sp-item"><i class="fas fa-map-marked-alt"></i><span><strong>All 50 States</strong></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AS SEEN IN -->
+  <div class="as-seen-in">
+    <div class="container">
+      <div class="as-seen-label">As Featured In</div>
+      <div class="as-seen-logos">
+        <a href="https://markets.businessinsider.com/news/stocks/precision-telemed-announces-the-appointment-of-chris-lane-as-director-of-precision-performance-expands-holistic-wellness-programs-with-glp-1-weight-loss-treatments-1035133060" target="_blank" rel="noopener" class="as-seen-logo">Business Insider</a>
+        <a href="https://finance.yahoo.com/news/precision-telemed-announces-appointment-chris-155500205.html" target="_blank" rel="noopener" class="as-seen-logo">Yahoo Finance</a>
+        <a href="https://apnews.com/press-release/access-newswire/precision-telemed-announces-the-appointment-of-chris-lane-as-director-of-precision-performance-expands-holistic-wellness-programs-with-glp-1-weight-loss-treatments-fd803112a7ad02da83134c6908a0a191" target="_blank" rel="noopener" class="as-seen-logo">AP News</a>
+        <a href="https://www.digitaljournal.com/pr/news/access-newswire/precision-telemed-announces-appointment-chris-1159288491.html" target="_blank" rel="noopener" class="as-seen-logo">Digital Journal</a>
+        <a href="https://www.sciencetimes.com/articles/60588/20250911/precision-telemed-champions-evidence-based-wellness-transparent-glp-1-hormone-therapies.htm" target="_blank" rel="noopener" class="as-seen-logo">Science Times</a>
+        <a href="https://www.digitalfitnessworld.com/precision-telemed/" target="_blank" rel="noopener" class="as-seen-logo">Digital Fitness World</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div style="text-align:center; max-width:620px; margin:0 auto 3rem;">
+        <div class="eyebrow reveal"><span class="eyebrow__dot"></span> Transparent Pricing</div>
+        <h2 class="heading-lg reveal delay-1" style="margin-top:.75rem;">One Simple Price.<br/>Everything Included.</h2>
+        <p class="text-muted reveal delay-2" style="margin-top:1rem; line-height:1.7;">
+          A flat <strong>$199/mo</strong> covers your Sermorelin prescription, physician oversight, and free shipping — no dose-based price hikes, no hidden fees, no lock-in.
+        </p>
+      </div>
+
+      <!-- Pricing Comparison + CTA (unified) -->
+      <div class="pricing-compare reveal">
+
+        <!-- Left: Typical clinic price -->
+        <div class="pricing-compare__old">
+          <div class="pricing-compare__old-label">Typical Clinic / Medspa</div>
+          <div class="pricing-compare__old-price-wrap">
+            <span class="pricing-compare__old-price">$400</span>
+            <span class="pricing-compare__old-per">/mo</span>
+          </div>
+          <div class="pricing-compare__old-source">Average price before fees &amp; markups</div>
+          <div class="pricing-compare__divider"></div>
+          <ul class="pricing-compare__feature-list">
+            <li class="no"><i class="fas fa-xmark"></i><span>In-person office visits required</span></li>
+            <li class="no"><i class="fas fa-xmark"></i><span>Variable dose-tiered pricing</span></li>
+            <li class="no"><i class="fas fa-xmark"></i><span>Hidden admin &amp; lab fees</span></li>
+            <li class="no"><i class="fas fa-xmark"></i><span>Long-term contracts common</span></li>
+            <li class="no"><i class="fas fa-xmark"></i><span>No included nutrition plan</span></li>
+          </ul>
+        </div>
+
+        <!-- Right: Precision Telemed — this IS the CTA card -->
+        <div class="pricing-compare__new">
+          <div class="pricing-compare__new-badge">Best Value</div>
+          <div class="pricing-compare__new-label">Precision Telemed &mdash; Flat Rate</div>
+          <div class="pricing-compare__new-price-wrap">
+            <span class="pricing-compare__new-price">$199</span>
+            <span class="pricing-compare__new-per">/mo</span>
+          </div>
+          <div class="pricing-compare__new-sub">That's just <strong style="color:var(--color-primary);">$6.63/day</strong> &mdash; cancel anytime.</div>
+          <div class="pricing-compare__savings"><i class="fas fa-circle-arrow-down"></i> Save $201/mo vs. average clinic</div>
+          <div class="pricing-compare__divider"></div>
+          <ul class="pricing-compare__feature-list">
+            <li class="yes"><i class="fas fa-check-circle"></i><span>Sermorelin 200–500 mcg/day</span></li>
+            <li class="yes"><i class="fas fa-check-circle"></i><span>Board-certified physician oversight</span></li>
+            <li class="yes"><i class="fas fa-check-circle"></i><span>Free expedited shipping</span></li>
+            <li class="yes"><i class="fas fa-check-circle"></i><span>FREE workout &amp; nutrition plan</span></li>
+            <li class="yes"><i class="fas fa-check-circle"></i><span>No subscription &mdash; cancel anytime</span></li>
+          </ul>
+          <a href="https://precisiontelemed.com/start-anti-aging-program-sermorelin/" target="_blank" rel="noopener" class="btn btn--primary" style="width:100%; margin-top:.25rem;">
+            Check My Eligibility &mdash; Free &nbsp;<i class="fas fa-arrow-right btn__arrow"></i>
+          </a>
+        </div>
+
+      </div>
+      <div style="text-align:center; margin-top:2rem;" class="reveal">
+        <p style="font-size:.9rem; color:var(--color-fg-muted);">
+          <i class="fas fa-shield-halved" style="color:var(--color-primary); margin-right:.35rem;"></i>
+          $199/mo flat rate &mdash; same price every month, no lock-in, cancel anytime.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTORS CAROUSEL -->
+  <section class="doctors-section" aria-labelledby="doctors-heading">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:1.5rem; margin-bottom:.5rem;">
+        <div>
+          <div class="eyebrow reveal"><span class="eyebrow__dot"></span> Our Physicians</div>
+          <h2 id="doctors-heading" class="heading-lg reveal delay-1" style="margin-top:.75rem; color:#1a1a1a;">
+            Board-Certified Doctors,<br/><em style="font-weight:400; color:#555555; font-style:italic;">Dedicated to Your Results</em>
+          </h2>
+        </div>
+        <p class="reveal delay-2" style="max-width:380px; font-size:.9375rem; color:#555555; line-height:1.7;">
+          Every patient is matched with a physician specializing in hormone optimization and peptide therapy — not a one-size-fits-all algorithm.
+        </p>
+      </div>
+    </div>
+    <div class="container" style="position:relative;">
+      <div class="doctors-carousel-outer">
+        <div class="doctors-carousel-track-wrap" id="doc-track-wrap">
+          <div class="doctors-carousel-track" id="doc-track">
+
+            <!-- Doctor 1: Dr. Joseph Palumbo -->
+            <div class="doctor-card active" data-index="0">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/dr-palumbo.jpg" alt="Dr. Joseph Palumbo, DO" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">Medical Director</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Dr. Joseph Palumbo, DO</div>
+                <div class="doctor-card__credentials">Medical Director · Osteopathic Medicine</div>
+                <div class="doctor-card__bio">Medical Director at Precision Telemed. Trained at Lake Erie College of Osteopathic Medicine, Dr. Palumbo leads clinical oversight across all peptide and hormone therapy programs.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Medical Director</span><span class="doctor-card__tag">Peptide Therapy</span><span class="doctor-card__tag">Sermorelin</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1043478878</strong></div><span class="doctor-card__inst"><img src="images/logos/lecom.svg" alt="Lake Erie College of Osteopathic Medicine"></span></div>
+            </div>
+
+            <!-- Doctor 2: Angela Kifer-Thomas -->
+            <div class="doctor-card" data-index="1">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/angela-kifer-thomas.jpg" alt="Angela Kifer-Thomas, APRN, ACNPC-AG" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">Acute Care</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Angela Kifer-Thomas, APRN, ACNPC-AG</div>
+                <div class="doctor-card__credentials">Acute Care · University of Texas Medical Branch</div>
+                <div class="doctor-card__bio">Advanced Practice RN specializing in acute care, trained at UTMB Galveston. Delivers high-acuity, responsive patient management for peptide and hormone programs.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Acute Care</span><span class="doctor-card__tag">Advanced Practice</span><span class="doctor-card__tag">Sermorelin</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1578278487</strong></div><span class="doctor-card__inst"><img src="images/logos/utmb-health.svg" alt="University of Texas Medical Branch"></span></div>
+            </div>
+
+            <!-- Doctor 3: Dr. Kartik Patel -->
+            <div class="doctor-card" data-index="2">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/dr-patel.jpg" alt="Dr. Kartik Patel, MD, MBA" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">Internal Medicine</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Dr. Kartik Patel, MD, MBA</div>
+                <div class="doctor-card__credentials">Internal Medicine · University of Colorado</div>
+                <div class="doctor-card__bio">Board-certified internist with advanced training at the University of Colorado at Denver. Specializes in hormone optimization and peptide therapy for longevity and performance.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Internal Medicine</span><span class="doctor-card__tag">Hormone Health</span><span class="doctor-card__tag">Longevity</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1588786465</strong></div><span class="doctor-card__inst"><img src="images/logos/cu-colorado.svg" alt="University of Colorado"></span></div>
+            </div>
+
+            <!-- Doctor 4: Angel L. Colón-Molero -->
+            <div class="doctor-card" data-index="3">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/dr-colon-molero.jpg" alt="Angel L. Colón-Molero, MD, MBA, MPH" style="width:100%;height:100%;object-position:center 30%;" />
+                <div class="doctor-card__specialty-badge">Internal Medicine</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Angel L. Colón-Molero, MD, MBA, MPH</div>
+                <div class="doctor-card__credentials">Internal Medicine · Veterans Health Administration</div>
+                <div class="doctor-card__bio">Internist with extensive experience through the Veterans Health Administration and Ponce School of Medicine. Patient-first approach to hormone and peptide care.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Internal Medicine</span><span class="doctor-card__tag">Peptides</span><span class="doctor-card__tag">GH Optimization</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1063415727</strong></div><span class="doctor-card__inst"><img src="images/logos/ponce.svg" alt="Ponce Health Sciences University"></span></div>
+            </div>
+
+            <!-- Doctor 5: Samuel Palmer -->
+            <div class="doctor-card" data-index="4">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/samuel-palmer.jpg" alt="Samuel Palmer, APRN" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">Adult &amp; Geriatric Care</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Samuel Palmer, APRN</div>
+                <div class="doctor-card__credentials">Adult &amp; Geriatric Care · Vanderbilt University</div>
+                <div class="doctor-card__bio">Advanced Practice RN trained at Vanderbilt University. Brings decades of adult and geriatric clinical experience to telehealth-based peptide and hormone therapy programs.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Geriatric Care</span><span class="doctor-card__tag">Peptide Therapy</span><span class="doctor-card__tag">Telehealth</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1689014862</strong></div><span class="doctor-card__inst"><img src="images/logos/vanderbilt.svg" alt="Vanderbilt University"></span></div>
+            </div>
+
+            <!-- Doctor 6: Dr. Gidon Akler -->
+            <div class="doctor-card" data-index="5">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/dr-akler.jpg" alt="Dr. Gidon Akler, MD" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">Emergency Medicine</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Dr. Gidon Akler, MD</div>
+                <div class="doctor-card__credentials">Emergency Medicine · Mount Sinai Hospital NY</div>
+                <div class="doctor-card__bio">Emergency physician trained at Tel Aviv University Medical School with residency at Mount Sinai NY. Expert in rapid clinical assessment and metabolic hormone care.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Emergency Med</span><span class="doctor-card__tag">Hormones</span><span class="doctor-card__tag">Metabolic</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1770978181</strong></div><span class="doctor-card__inst"><img src="images/logos/tel-aviv.svg" alt="Tel Aviv University"></span></div>
+            </div>
+
+            <!-- Doctor 7: Brett Whaley -->
+            <div class="doctor-card" data-index="6">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/brett-whaley.jpg" alt="Brett Whaley, ACNP-BC" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">Critical Care</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Brett Whaley, ACNP-BC</div>
+                <div class="doctor-card__credentials">Critical Care · Texas Tech University School of Nursing</div>
+                <div class="doctor-card__bio">Board-certified Acute Care NP from Texas Tech University. Specializes in critical and complex metabolic conditions with a focus on comprehensive patient outcomes.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Critical Care</span><span class="doctor-card__tag">ACNP</span><span class="doctor-card__tag">GH Therapy</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1164797643</strong></div><span class="doctor-card__inst"><img src="images/logos/texas-tech.svg" alt="Texas Tech University"></span></div>
+            </div>
+
+            <!-- Doctor 8: Michael Gype -->
+            <div class="doctor-card" data-index="7">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/michael-gype.jpg" alt="Michael Gype, PA-C" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">General Practice</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Michael Gype, PA-C</div>
+                <div class="doctor-card__credentials">General Practice · Cleveland State University</div>
+                <div class="doctor-card__bio">Certified Physician Assistant from Cleveland State University. Provides accessible, personalized peptide therapy and hormone care with a broad general practice background.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">General Practice</span><span class="doctor-card__tag">PA-C</span><span class="doctor-card__tag">Sermorelin</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1952760977</strong></div><span class="doctor-card__inst"><img src="images/logos/cleveland-state.svg" alt="Cleveland State University"></span></div>
+            </div>
+
+            <!-- Doctor 9: Dr. Robert Chandler -->
+            <div class="doctor-card" data-index="8">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/dr-chandler.jpg" alt="Dr. Robert Chandler, DO" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">Emergency Medicine</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Dr. Robert Chandler, DO</div>
+                <div class="doctor-card__credentials">Emergency Medicine · Lake Erie College of Osteopathic Medicine</div>
+                <div class="doctor-card__bio">Osteopathic emergency medicine physician applying a whole-body clinical lens to peptide therapy and hormone optimization programs.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Emergency Med</span><span class="doctor-card__tag">Osteopathic</span><span class="doctor-card__tag">Peptides</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1922244664</strong></div><span class="doctor-card__inst"><img src="images/logos/lecom.svg" alt="Lake Erie College of Osteopathic Medicine"></span></div>
+            </div>
+
+            <!-- Doctor 10: Brittany Umana -->
+            <div class="doctor-card" data-index="9">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/brittany-umana.jpg" alt="Brittany Umana, DNP, ARNP, FNP-C" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">Family Nurse Practitioner</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Brittany Umana, DNP, ARNP, FNP-C</div>
+                <div class="doctor-card__credentials">Family NP · Maryville University (DNP)</div>
+                <div class="doctor-card__bio">DNP-prepared Family Nurse Practitioner trained at Maryville University and Washburn University. Delivers holistic, primary-focused care for peptide therapy patients.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Family Medicine</span><span class="doctor-card__tag">DNP</span><span class="doctor-card__tag">Hormone Health</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1366175051</strong></div><span class="doctor-card__inst"><img src="images/logos/maryville.svg" alt="Maryville University"></span></div>
+            </div>
+
+            <!-- Doctor 11: Dr. Azhar Ahmed -->
+            <div class="doctor-card" data-index="10">
+              <div class="doctor-card__img-wrap">
+                <img src="images/doctors/dr-ahmed.jpg" alt="Dr. Azhar Ahmed, MD" style="width:100%;height:100%;" />
+                <div class="doctor-card__specialty-badge">Emergency Medicine</div>
+              </div>
+              <div class="doctor-card__body">
+                <div class="doctor-card__name">Dr. Azhar Ahmed, MD</div>
+                <div class="doctor-card__credentials">Emergency Medicine · University of Kentucky</div>
+                <div class="doctor-card__bio">Emergency medicine physician from the University of Kentucky bringing high-level diagnostic precision and clinical expertise to peptide and hormone optimization programs.</div>
+                <div class="doctor-card__tags"><span class="doctor-card__tag">Emergency Med</span><span class="doctor-card__tag">Diagnostics</span><span class="doctor-card__tag">Sermorelin</span></div>
+              </div>
+              <div class="doctor-card__footer"><div class="doctor-card__exp">NPI# <strong>1164958351</strong></div><span class="doctor-card__inst"><img src="images/logos/kentucky.svg" alt="University of Kentucky"></span></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-progress"><div class="carousel-progress-bar" id="doc-progress-bar" style="width:9.09%;"></div></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="doc-prev" aria-label="Previous doctor"><i class="fas fa-chevron-left"></i></button>
+        <div class="carousel-dots" id="doc-dots" role="tablist" aria-label="Doctor pagination"></div>
+        <button class="carousel-btn" id="doc-next" aria-label="Next doctor"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="doctors-drag-hint" aria-hidden="true"><i class="fas fa-hand-pointer"></i> Drag or swipe to explore</div>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER -->
+  <section class="before-after-section">
+    <div class="container">
+      <div style="text-align:center; max-width:620px; margin:0 auto 3rem;">
+        <div class="eyebrow reveal"><span class="eyebrow__dot"></span> Real Patient Results</div>
+        <h2 class="heading-lg reveal delay-1" style="margin-top:.75rem;">See the Transformation</h2>
+        <p class="text-muted reveal delay-2" style="margin-top:1rem; line-height:1.7;">Real patients. Real results. These are the kinds of body composition changes our patients experience with Sermorelin therapy.</p>
+      </div>
+      <div class="before-after-grid">
+        <div class="ba-card reveal reveal--left">
+          <img src="images/patient-result-1.jpg" alt="Male patient before and after Sermorelin therapy — significant muscle definition and fat loss" loading="lazy" />
+          <div class="ba-card__label"><i class="fas fa-circle-check"></i> Verified Patient Result</div>
+        </div>
+        <div class="ba-card reveal reveal--right">
+          <img src="images/patient-result-2.jpg" alt="Female patient before and after Sermorelin therapy — improved body composition and tone" loading="lazy" />
+          <div class="ba-card__label"><i class="fas fa-circle-check"></i> Verified Patient Result</div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+        <p style="font-size:.8rem; color:var(--color-fg-muted); max-width:560px; margin:0 auto;">Individual results may vary. Photos shared with patient consent. Results reflect a combination of Sermorelin therapy, nutrition, and exercise.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKOUT SECTION -->
+  <section class="workout-section" aria-labelledby="workout-heading">
+    <div class="container">
+
+      <!-- Centered header -->
+      <div class="workout-header reveal">
+        <div class="eyebrow-pill">🏋️ Holistic Approach</div>
+        <h2 id="workout-heading">More Than<br/>Medication</h2>
+        <p>Our holistic approach includes a free customized workout tailored to your goals — because true wellness goes beyond a prescription.</p>
+        <div class="workout-free-badge">🎁 &nbsp;Free With Every Program</div>
+      </div>
+
+      <!-- Program cards -->
+      <div class="workout-programs-label reveal delay-1">Receive Your Program After Checkout</div>
+
+      <!-- Top card: full width -->
+      <div class="workout-cards reveal delay-2">
+        <div class="workout-card">
+          <div class="workout-card__icon"><i class="fas fa-dumbbell"></i></div>
+          <div class="workout-card__body">
+            <div class="workout-card__title">Weight Loss &amp; Strength Training</div>
+            <div class="workout-card__sub">Full gym equipment &middot; Burn fat &amp; build muscle simultaneously</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom row: two half cards -->
+      <div class="workout-cards-bottom reveal delay-3">
+        <div class="workout-card workout-card--half">
+          <div class="workout-card__icon"><i class="fas fa-house"></i></div>
+          <div class="workout-card__title">Home Workout</div>
+          <div class="workout-card__sub">Cardio + no equipment</div>
+        </div>
+        <div class="workout-card workout-card--half">
+          <div class="workout-card__icon"><i class="fas fa-person-walking"></i></div>
+          <div class="workout-card__title">Functional Mobility Training</div>
+          <div class="workout-card__sub">Mobility &amp; stability &middot; Corrective Exercises &amp; fixing imbalances</div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:2rem;" class="reveal delay-4">
+        <a href="https://precisiontelemed.com/start-anti-aging-program-sermorelin/" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+          Check My Eligibility — Free &nbsp;<i class="fas fa-arrow-right btn__arrow"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESULTS TIMELINE -->
+  <section class="section" id="results-timeline">
+    <div class="container">
+      <div style="text-align:center; max-width:620px; margin:0 auto 3.5rem;">
+        <div class="eyebrow reveal"><span class="eyebrow__dot"></span> What to Expect</div>
+        <h2 class="heading-lg reveal delay-1" style="margin-top:.75rem;">When Will I See Results?</h2>
+        <p class="text-muted reveal delay-2" style="margin-top:1rem; line-height:1.7;">Sermorelin works progressively — results build as your GH levels are restored. Here's what most patients experience:</p>
+      </div>
+      <div class="timeline-grid">
+        <div class="timeline-card reveal">
+          <div class="timeline-card__week">Week 1–2</div>
+          <div class="timeline-card__icon"><i class="fas fa-moon"></i></div>
+          <h4 class="timeline-card__title">Deeper Sleep</h4>
+          <p class="timeline-card__desc">Most patients notice improved sleep quality first — falling asleep faster, waking less, feeling more rested. GH is predominantly released during deep sleep stages.<sup>1</sup></p>
+        </div>
+        <div class="timeline-card reveal delay-1">
+          <div class="timeline-card__week">Week 4–6</div>
+          <div class="timeline-card__icon"><i class="fas fa-bolt"></i></div>
+          <h4 class="timeline-card__title">Energy Surge</h4>
+          <p class="timeline-card__desc">Daytime energy, motivation, and mental clarity improve as GH levels begin to rise and cellular repair accelerates overnight.<sup>2</sup></p>
+        </div>
+        <div class="timeline-card reveal delay-2">
+          <div class="timeline-card__week">Month 2–3</div>
+          <div class="timeline-card__icon"><i class="fas fa-fire-flame-curved"></i></div>
+          <h4 class="timeline-card__title">Fat Metabolism</h4>
+          <p class="timeline-card__desc">Stubborn body fat — especially abdominal — begins to mobilize as GH-driven lipolysis accelerates. Most patients notice clothing fitting differently.<sup>3</sup></p>
+        </div>
+        <div class="timeline-card reveal delay-3">
+          <div class="timeline-card__week">Month 3–6</div>
+          <div class="timeline-card__icon"><i class="fas fa-dumbbell"></i></div>
+          <h4 class="timeline-card__title">Lean Muscle</h4>
+          <p class="timeline-card__desc">With consistent therapy, exercise, and nutrition, lean muscle mass measurably increases as GH-driven protein synthesis and recovery reach full stride.<sup>4</sup></p>
+        </div>
+      </div>
+      <div class="timeline-footnotes reveal">
+        <p><sup>1</sup> Van Cauter E, et al. <em>Sleep and the GH/IGF-I axis.</em> Sleep, 2000;23(Suppl 4):S245–S248. <a href="https://pubmed.ncbi.nlm.nih.gov/9467542/" target="_blank" rel="noopener">PubMed</a></p>
+        <p><sup>2</sup> Walker RF. <em>Sermorelin: a better approach to management of adult-onset growth hormone insufficiency?</em> Clinical Interventions in Aging, 2006. <a href="https://pubmed.ncbi.nlm.nih.gov/8360483/" target="_blank" rel="noopener">PubMed</a></p>
+        <p><sup>3</sup> Corpas E, et al. <em>Human growth hormone and human aging.</em> Endocrine Reviews, 1993;14(1):20–39. <a href="https://pubmed.ncbi.nlm.nih.gov/10997774/" target="_blank" rel="noopener">PubMed</a></p>
+        <p><sup>4</sup> Khorram O, et al. <em>Effects of GHRH stimulation on growth hormone secretion in aging.</em> JCEM, 1997. <a href="https://pubmed.ncbi.nlm.nih.gov/12112947/" target="_blank" rel="noopener">PubMed</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE SCIENCE -->
+  <section class="section" id="science">
+    <div class="container">
+      <div class="science-grid">
+        <div class="science-visual reveal reveal--left">
+          <img src="images/science-visual.jpg" alt="Human biology and peptide science" />
+          <div class="science-visual__badge">
+            <div class="science-visual__badge-title">Up to 30% Increase in GH Levels</div>
+            <div class="science-visual__badge-sub">Observed in clinical peptide studies · Naturally stimulated</div>
+          </div>
+        </div>
+        <div class="science-content">
+          <div>
+            <div class="eyebrow reveal"><span class="eyebrow__dot"></span> The Science</div>
+            <h2 class="heading-md reveal delay-1" style="margin-top:.625rem; font-size:clamp(1.5rem,2.5vw,2.25rem);">
+              Your Pituitary Gland<br />Still Knows What to Do.
+            </h2>
+          </div>
+          <p class="text-muted reveal delay-2" style="font-size:.8125rem; line-height:1.7;">
+            Sermorelin is a GHRH analogue — a 29-amino acid peptide that stimulates your pituitary gland to produce your own natural growth hormone. Unlike synthetic HGH, it works <em>with</em> your physiology, preserving the feedback loops that keep hormone levels safe and balanced.
+          </p>
+          <div class="data-bars-block reveal delay-3">
+            <div class="data-bar-row">
+              <div class="data-bar-label" style="font-size:.75rem;"><span>Increase in natural GH secretion</span><span>Up to 30%</span></div>
+              <div class="data-bar-track"><div class="data-bar-fill" data-width="62"></div></div>
+            </div>
+            <div class="data-bar-row">
+              <div class="data-bar-label" style="font-size:.75rem;"><span>Patients reporting improved sleep</span><span>~80%</span></div>
+              <div class="data-bar-track"><div class="data-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="data-bar-row" style="margin-bottom:0;">
+              <div class="data-bar-label" style="font-size:.75rem;"><span>Improved energy &amp; recovery</span><span>~75%</span></div>
+              <div class="data-bar-track"><div class="data-bar-fill" data-width="75"></div></div>
+            </div>
+          </div>
+          <div class="mechanism-cards reveal delay-4">
+            <div class="mechanism-card">
+              <div class="mechanism-card__icon"><i class="fas fa-brain"></i></div>
+              <h4>Pituitary Stimulation</h4>
+              <p>Binds to GHRH receptors, triggering your body's own natural GH production and release.</p>
+            </div>
+            <div class="mechanism-card">
+              <div class="mechanism-card__icon"><i class="fas fa-moon"></i></div>
+              <h4>Deep Sleep Restoration</h4>
+              <p>Restores the critical overnight GH release window during slow-wave sleep.</p>
+            </div>
+            <div class="mechanism-card">
+              <div class="mechanism-card__icon"><i class="fas fa-fire-flame-curved"></i></div>
+              <h4>Fat Metabolism</h4>
+              <p>Elevated GH enhances lipolysis — burning stored body fat more efficiently for fuel.</p>
+            </div>
+            <div class="mechanism-card">
+              <div class="mechanism-card__icon"><i class="fas fa-shield-halved"></i></div>
+              <h4>Self-Regulating Safety</h4>
+              <p>Preserves your body's natural feedback loop, preventing dangerous GH overproduction.</p>
+            </div>
+          </div>
+          <div class="science-footnotes reveal">
+            <p class="science-footnotes__label"><i class="fas fa-flask"></i> Clinical References</p>
+            <ol class="science-footnotes__list">
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/8360483/" target="_blank" rel="noopener">Walker RF. <em>Sermorelin: a better approach to management of adult-onset growth hormone insufficiency?</em> Clinical Interventions in Aging, 2006.</a></li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/12112947/" target="_blank" rel="noopener">Khorram O, et al. <em>Effects of GHRH stimulation on growth hormone secretion in aging.</em> Journal of Clinical Endocrinology &amp; Metabolism, 1997.</a></li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/9467542/" target="_blank" rel="noopener">Van Cauter E, et al. <em>Sleep and the GH/IGF-I axis.</em> Sleep, 2000;23(Suppl 4):S245–S248.</a></li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/10997774/" target="_blank" rel="noopener">Corpas E, et al. <em>Human growth hormone and human aging.</em> Endocrine Reviews, 1993;14(1):20–39.</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div style="text-align:center; max-width:620px; margin:0 auto 4rem;">
+        <div class="eyebrow reveal"><span class="eyebrow__dot"></span> Real Results</div>
+        <h2 class="heading-lg reveal delay-1" style="margin-top:.75rem;">Patients Who Got<br/>Their Vitality Back</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-quote">I'm 47 and felt like I was running on empty. Two months into Sermorelin and I sleep like I did in my 30s. I wake up actually rested. My gym performance is back and I've lost 12 lbs without changing my diet.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><img src="images/testimonial-michael.jpg" alt="Michael J."></div>
+            <div><div class="testimonial-author-name">Michael J.</div><div class="testimonial-author-sub">Verified Patient · Age 47</div></div>
+            <div style="margin-left:auto;"><span class="testimonial-loss-badge"><i class="fas fa-bolt"></i> Energy Restored</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal delay-1">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-quote">The consultation was incredibly thorough. My doctor actually listened, reviewed my labs, and explained exactly how Sermorelin would work for me. Three months in — my body composition has shifted noticeably. Less fat, more muscle.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><img src="images/testimonial-tanya.jpg" alt="Tanya R."></div>
+            <div><div class="testimonial-author-name">Tanya R.</div><div class="testimonial-author-sub">Verified Patient · Age 52</div></div>
+            <div style="margin-left:auto;"><span class="testimonial-loss-badge"><i class="fas fa-person-running"></i> Body Recomp</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal delay-2">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-quote">I was skeptical of peptides at first. But my doctor walked me through the research, and the results speak for themselves. Better sleep, more energy, faster recovery from workouts. I feel 10 years younger — and I have the labs to prove my GH is up.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><img src="images/testimonial-daniel.jpg" alt="Daniel L."></div>
+            <div><div class="testimonial-author-name">Daniel L.</div><div class="testimonial-author-sub">Verified Patient · Age 44</div></div>
+            <div style="margin-left:auto;"><span class="testimonial-loss-badge"><i class="fas fa-moon"></i> Sleep Improved</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal delay-3">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-quote">I've tried everything for my low energy — thyroid checks, iron panels, you name it. Nothing explained it until my Precision Telemed doctor ordered a GH panel. Sermorelin was the missing piece. Six weeks in and I feel human again.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><img src="images/testimonial-sandra.jpg" alt="Sandra B."></div>
+            <div><div class="testimonial-author-name">Sandra B.</div><div class="testimonial-author-sub">Verified Patient · Age 49</div></div>
+            <div style="margin-left:auto;"><span class="testimonial-loss-badge"><i class="fas fa-bolt"></i> Fatigue Gone</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal delay-4">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-quote">As a competitive masters athlete I needed something to help with recovery. Sermorelin has been a game changer. My soreness is reduced, my sleep is deep, and I'm hitting PRs at 51. The $199/mo is absolutely worth it.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><img src="images/testimonial-kevin.jpg" alt="Kevin P."></div>
+            <div><div class="testimonial-author-name">Kevin P.</div><div class="testimonial-author-sub">Verified Patient · Age 51</div></div>
+            <div style="margin-left:auto;"><span class="testimonial-loss-badge"><i class="fas fa-trophy"></i> Peak Performance</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal delay-5">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-quote">I was nervous about injections but the Precision team made it so easy. The instructional support was clear, my doctor was available for questions, and within 30 days I noticed my sleep quality improve dramatically. My husband says I'm a different person.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><img src="images/testimonial-angela.jpg" alt="Angela L."></div>
+            <div><div class="testimonial-author-name">Angela L.</div><div class="testimonial-author-sub">Verified Patient · Age 46</div></div>
+            <div style="margin-left:auto;"><span class="testimonial-loss-badge"><i class="fas fa-moon"></i> Deep Sleep</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHARMACY -->
+  <section class="pharmacy-section">
+    <div class="container">
+      <div class="pharmacy-grid">
+        <div class="pharmacy-logo-card reveal reveal--left">
+          <img src="images/pharmacy-prorx.jpg" alt="ProRx 503b Outsourcing Facility" style="width:100%; max-width:280px; height:auto; margin-bottom:.5rem;" />
+          <div class="pharmacy-logo-sub">503b Outsourcing Facility Partner</div>
+          <div class="pharmacy-badge-row">
+            <span class="pharmacy-badge"><i class="fas fa-circle-check"></i> 503B Licensed</span>
+            <span class="pharmacy-badge"><i class="fas fa-circle-check"></i> FDA Registered</span>
+            <span class="pharmacy-badge"><i class="fas fa-circle-check"></i> PCAB Accredited</span>
+            <span class="pharmacy-badge"><i class="fas fa-circle-check"></i> HIPAA Compliant</span>
+          </div>
+        </div>
+        <div class="pharmacy-content">
+          <div class="eyebrow reveal" style="color:var(--color-primary-lt);"><span class="eyebrow__dot"></span> Our Pharmacy Partner</div>
+          <h2 class="reveal delay-1">Dispensed by<br /><em>the Best in the Business.</em></h2>
+          <ul class="pharmacy-list reveal delay-2">
+            <li><i class="fas fa-check"></i><div><strong>503B Licensed Outsourcing Facility</strong> — fully compliant with all state and federal regulations</div></li>
+            <li><i class="fas fa-check"></i><div><strong>Pharmaceutical-Grade Sermorelin Only</strong> — never research-grade or unverified peptide sources</div></li>
+            <li><i class="fas fa-check"></i><div><strong>Rigorous Quality Testing</strong> — every batch tested for potency, sterility, and purity before dispensing</div></li>
+            <li><i class="fas fa-check"></i><div><strong>Cold-Chain Shipping</strong> — temperature-controlled delivery to preserve peptide efficacy</div></li>
+          </ul>
+          <a href="https://precisiontelemed.com/start-anti-aging-program-sermorelin/" target="_blank" rel="noopener" class="btn btn--primary reveal delay-3">
+            Check My Eligibility &mdash; Free &nbsp;<i class="fas fa-arrow-right btn__arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <div class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal"><div class="stat-item__num"><span class="counter" data-target="30">0</span>%</div><div class="stat-item__label">Avg. Increase in GH Levels</div></div>
+        <div class="stat-item reveal delay-1"><div class="stat-item__num"><span class="counter" data-target="80">0</span>%</div><div class="stat-item__label">Report Better Sleep Quality</div></div>
+        <div class="stat-item reveal delay-2"><div class="stat-item__num"><span class="counter" data-target="5000">0</span>+</div><div class="stat-item__label">Patients Treated</div></div>
+        <div class="stat-item reveal delay-3"><div class="stat-item__num">4.7<span style="font-size:2rem;">★</span></div><div class="stat-item__label">Trustpilot Rating</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT SERMORELIN TREATS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div style="text-align:center; max-width:640px; margin:0 auto 3rem;">
+        <div class="eyebrow reveal"><span class="eyebrow__dot"></span> Who It's For</div>
+        <h2 class="heading-lg reveal delay-1" style="margin-top:.75rem;">GH Decline Affects<br/>More Than You Think.</h2>
+        <p class="text-muted reveal delay-2" style="margin-top:1rem; line-height:1.7;">Growth hormone naturally declines 15% per decade after age 30. By 50, most adults have less than half the GH levels they had at 25 — affecting energy, sleep, body composition, and cognitive clarity.</p>
+      </div>
+      <div class="highlight-cards">
+        <div class="highlight-card reveal">
+          <div class="highlight-card__icon"><i class="fas fa-bolt"></i></div>
+          <h4>Chronic Fatigue</h4>
+          <p>Low GH is directly linked to persistent low energy, poor motivation, and inability to recover between workouts or work days.</p>
+        </div>
+        <div class="highlight-card reveal delay-1">
+          <div class="highlight-card__icon"><i class="fas fa-moon"></i></div>
+          <h4>Poor Sleep Quality</h4>
+          <p>GH is primarily released during deep sleep. As levels drop, sleep quality deteriorates — creating a vicious cycle of fatigue.</p>
+        </div>
+        <div class="highlight-card reveal delay-2">
+          <div class="highlight-card__icon"><i class="fas fa-person-running"></i></div>
+          <h4>Loss of Lean Muscle</h4>
+          <p>Without adequate GH, your body struggles to maintain and build lean muscle mass, even with consistent exercise.</p>
+        </div>
+        <div class="highlight-card reveal delay-3">
+          <div class="highlight-card__icon"><i class="fas fa-weight-scale"></i></div>
+          <h4>Stubborn Body Fat</h4>
+          <p>GH drives fat metabolism. Low levels cause preferential fat storage — especially around the abdomen — that won't budge with diet alone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT IS NOT FOR -->
+  <section class="section not-for-section">
+    <div class="container">
+      <div style="text-align:center; max-width:620px; margin:0 auto 3rem;">
+        <div class="eyebrow reveal"><span class="eyebrow__dot"></span> Honest Transparency</div>
+        <h2 class="heading-lg reveal delay-1" style="margin-top:.75rem;">Who Sermorelin Is <em>Not</em> For</h2>
+        <p class="text-muted reveal delay-2" style="margin-top:1rem; line-height:1.7;">We believe in clinical honesty. Sermorelin is not the right fit for everyone — and your safety always comes first.</p>
+      </div>
+      <div class="not-for-grid">
+        <div class="not-for-card reveal">
+          <div class="not-for-card__icon"><i class="fas fa-xmark"></i></div>
+          <h4>Under Age 30</h4>
+          <p>Your pituitary is still producing peak GH naturally. Sermorelin is designed for adults experiencing age-related GH decline, typically beginning after 30.</p>
+        </div>
+        <div class="not-for-card reveal delay-1">
+          <div class="not-for-card__icon"><i class="fas fa-xmark"></i></div>
+          <h4>Active Cancer or Malignancy</h4>
+          <p>GH stimulation is contraindicated in patients with active cancer. Your physician will screen for this during your consultation before prescribing.</p>
+        </div>
+        <div class="not-for-card reveal delay-2">
+          <div class="not-for-card__icon"><i class="fas fa-xmark"></i></div>
+          <h4>Pregnancy or Breastfeeding</h4>
+          <p>Sermorelin is not indicated for use during pregnancy or breastfeeding. Safety in these populations has not been established.</p>
+        </div>
+        <div class="not-for-card reveal delay-3">
+          <div class="not-for-card__icon"><i class="fas fa-xmark"></i></div>
+          <h4>Looking for Overnight Results</h4>
+          <p>Sermorelin works with your body's natural rhythm — not against it. Results build over weeks and months. If you want a quick fix, this isn't it.</p>
+        </div>
+        <div class="not-for-card reveal delay-4">
+          <div class="not-for-card__icon"><i class="fas fa-xmark"></i></div>
+          <h4>Diagnosed Pituitary Disorder</h4>
+          <p>Patients with known pituitary tumors or dysfunction may not respond to Sermorelin as it requires a functional pituitary gland. Your doctor will evaluate this.</p>
+        </div>
+        <div class="not-for-card reveal delay-5">
+          <div class="not-for-card__icon"><i class="fas fa-xmark"></i></div>
+          <h4>Unwilling to Self-Inject</h4>
+          <p>Sermorelin is a subcutaneous injection taken at bedtime. If self-injection is a hard no for you, we'd recommend exploring our other oral-friendly programs.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:3rem;" class="reveal">
+        <p style="font-size:.9rem; color:var(--color-fg-muted); max-width:580px; margin:0 auto 1.5rem;">Not sure if you qualify? Our board-certified physicians will evaluate your full health history during your free consultation.</p>
+        <a href="https://precisiontelemed.com/start-anti-aging-program-sermorelin/" target="_blank" rel="noopener" class="btn btn--primary">Check My Eligibility — Free &nbsp;<i class="fas fa-arrow-right btn__arrow"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section--alt" id="how-it-works">
+    <div class="container">
+      <div style="text-align:center; max-width:620px; margin:0 auto 4rem;">
+        <div class="eyebrow reveal"><span class="eyebrow__dot"></span> Simple Process</div>
+        <h2 class="heading-lg reveal delay-1" style="margin-top:.75rem;">From Sign-Up to<br/>First Dose in Days</h2>
+        <p class="text-muted reveal delay-2" style="margin-top:1rem;">We've built the fastest, most streamlined path to starting Sermorelin therapy — no office visits, no long waits.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-card__num">01</div>
+          <div class="step-card__icon-wrap"><i class="fas fa-clipboard-list"></i></div>
+          <div style="display:inline-flex;align-items:center;gap:.35rem;background:rgba(var(--color-primary-rgb),.08);border:1px solid rgba(var(--color-primary-rgb),.18);border-radius:var(--radius-full);padding:.2rem .65rem;font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.75rem;"><i class="fas fa-clock" style="font-size:.6rem;"></i> Takes 5 min</div>
+          <h3>Complete Your Assessment</h3>
+          <p>Answer a brief online health questionnaire. We'll review your symptoms and eligibility instantly — no office visit required.</p>
+        </div>
+        <div class="step-card reveal delay-2">
+          <div class="step-card__num">02</div>
+          <div class="step-card__icon-wrap"><i class="fas fa-video"></i></div>
+          <div style="display:inline-flex;align-items:center;gap:.35rem;background:rgba(var(--color-primary-rgb),.08);border:1px solid rgba(var(--color-primary-rgb),.18);border-radius:var(--radius-full);padding:.2rem .65rem;font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.75rem;"><i class="fas fa-clock" style="font-size:.6rem;"></i> Often same day</div>
+          <h3>Consult a Board-Certified Doctor</h3>
+          <p>Meet your physician via secure telehealth. They'll review your hormone health and build your personalized Sermorelin protocol.</p>
+        </div>
+        <div class="step-card reveal delay-4">
+          <div class="step-card__num">03</div>
+          <div class="step-card__icon-wrap"><i class="fas fa-box-open"></i></div>
+          <div style="display:inline-flex;align-items:center;gap:.35rem;background:rgba(var(--color-primary-rgb),.08);border:1px solid rgba(var(--color-primary-rgb),.18);border-radius:var(--radius-full);padding:.2rem .65rem;font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.75rem;"><i class="fas fa-clock" style="font-size:.6rem;"></i> 3–5 days to your door</div>
+          <h3>Receive &amp; Begin Treatment</h3>
+          <p>Your Sermorelin ships from our licensed 503A pharmacy, discreetly packaged, with clear self-injection instructions and ongoing physician support.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:3rem;" class="reveal">
+        <a href="https://precisiontelemed.com/start-anti-aging-program-sermorelin/" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+          Start My Assessment &nbsp;<i class="fas fa-arrow-right btn__arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIRZEPATIDE CROSS-SELL -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div style="max-width:820px;margin:0 auto;background:linear-gradient(135deg,rgba(var(--color-primary-rgb),.07) 0%,rgba(var(--color-primary-rgb),.03) 100%);border:1px solid rgba(var(--color-primary-rgb),.2);border-radius:var(--radius-xl);padding:2.25rem 2.5rem;display:flex;flex-wrap:wrap;align-items:center;gap:2rem;" class="reveal">
+        <div style="flex:1;min-width:240px;">
+          <div style="font-size:.65rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.6rem;"><i class="fas fa-arrow-trend-down" style="margin-right:.35rem;"></i> Also Looking to Lose Weight?</div>
+          <h3 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:700;color:var(--color-fg);line-height:1.25;margin-bottom:.6rem;">Many patients combine Sermorelin with our Tirzepatide weight loss program.</h3>
+          <p style="font-size:.875rem;color:var(--color-fg-muted);line-height:1.65;margin:0;">Sermorelin rebuilds lean muscle and restores metabolism. Tirzepatide accelerates fat loss directly. Together, they're one of the most effective body recomposition protocols available through telehealth.</p>
+        </div>
+        <div style="flex-shrink:0;text-align:center;">
+          <a href="https://precisiontelemed.com/compounded-tirzepatide/" target="_blank" rel="noopener" class="btn btn--primary">Explore Tirzepatide &nbsp;<i class="fas fa-arrow-right btn__arrow"></i></a>
+          <div style="margin-top:.75rem;font-size:.75rem;color:var(--color-fg-muted);">Starting at $199 first month</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div style="text-align:center; max-width:620px; margin:0 auto 4rem;">
+        <div class="eyebrow reveal"><span class="eyebrow__dot"></span> Common Questions</div>
+        <h2 class="heading-lg reveal delay-1" style="margin-top:.75rem;">Everything You Need to Know</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">Why does Sermorelin cost $199/mo?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+          <div class="faq-answer"><p>Our $199/mo flat rate covers everything — your Sermorelin prescription, monthly vial supply, board-certified physician oversight, free expedited shipping, and a customized free workout plan. Traditional clinics and medspas charge $400–$800+/mo for the same therapy because of in-person overhead, office visit fees, and tiered dose pricing. By operating fully via telehealth and partnering directly with a licensed 503A compounding pharmacy, we cut out the middlemen and pass the savings to you. Same pharmaceutical-grade medication. Same board-certified doctors. Less than half the price.</p></div>
+        </div>
+        <div class="faq-item reveal delay-1">
+          <button class="faq-question" onclick="toggleFaq(this)">Is Sermorelin covered by insurance?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+          <div class="faq-answer"><p>Sermorelin therapy prescribed for age-related GH decline and wellness optimization is generally not covered by insurance, as most plans only cover GH treatments for diagnosed deficiency disorders requiring specific lab criteria. However, at $199/mo — just $6.63/day — our out-of-pocket cost is significantly lower than traditional clinics. We accept all major credit and debit cards, and many patients use HSA or FSA accounts. There are no surprise bills — you always know exactly what you'll pay.</p></div>
+        </div>
+        <div class="faq-item reveal delay-2">
+          <button class="faq-question" onclick="toggleFaq(this)">What is Sermorelin and how does it work?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+          <div class="faq-answer"><p>Sermorelin is a synthetic analogue of growth hormone releasing hormone (GHRH) — the signal your hypothalamus naturally sends to your pituitary gland to produce growth hormone. As a 29-amino acid peptide, Sermorelin binds directly to GHRH receptors in the pituitary, triggering your body to produce and release its own natural GH. This is fundamentally different from synthetic HGH injections, which bypass your body's regulatory system. Sermorelin restores the natural GH-axis — so your body produces more GH in its normal pulsatile pattern, preserving the feedback mechanisms that prevent overproduction.</p></div>
+        </div>
+        <div class="faq-item reveal delay-1">
+          <button class="faq-question" onclick="toggleFaq(this)">Is Sermorelin safe? What are the side effects?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+          <div class="faq-answer"><p>Sermorelin has a well-established safety profile and has been used in clinical settings since the 1990s. Because it stimulates your body to produce its own GH — rather than introducing synthetic HGH directly — it preserves your natural feedback loops, which limits the risk of GH excess. Common side effects are mild and typically transient: minor injection site redness, flushing, or headache. Your Precision Telemed physician will review your health history, symptoms, and any labs before prescribing to ensure Sermorelin is appropriate for you.</p></div>
+        </div>
+        <div class="faq-item reveal delay-2">
+          <button class="faq-question" onclick="toggleFaq(this)">How is Sermorelin different from HGH injections?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+          <div class="faq-answer"><p>Synthetic HGH (human growth hormone) directly replaces GH in your body, bypassing the pituitary's regulatory control. This can suppress your body's natural production over time and carries a higher risk of side effects from GH excess. Sermorelin, by contrast, stimulates your pituitary to produce and release GH naturally — maintaining the normal pulsatile rhythm and preserving your body's self-regulating feedback system. Sermorelin is also significantly more affordable and legally prescribed for hormone optimization, making it the preferred first-line peptide therapy at Precision Telemed.</p></div>
+        </div>
+        <div class="faq-item reveal delay-3">
+          <button class="faq-question" onclick="toggleFaq(this)">How quickly will I see results from Sermorelin?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+          <div class="faq-answer"><p>Results develop progressively. Most patients notice improved sleep quality within the first 2–4 weeks, as GH is predominantly released during deep sleep stages. Energy improvements typically follow by weeks 4–6. Body composition changes — reduced body fat and increased lean muscle — generally become apparent between months 2–4 with consistent use. Full optimization typically occurs over 3–6 months. Results vary based on age, baseline GH levels, diet, exercise habits, and adherence to the protocol.</p></div>
+        </div>
+        <div class="faq-item reveal delay-4">
+          <button class="faq-question" onclick="toggleFaq(this)">How is Sermorelin administered?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+          <div class="faq-answer"><p>Sermorelin is administered via small subcutaneous injections — similar to insulin injections — typically once daily at bedtime. The bedtime timing is intentional: it aligns with your body's natural GH release cycle during sleep. The needles are very small (insulin-gauge) and most patients report minimal to no discomfort. Your physician will provide clear dosing instructions, and our team is available for support as you get comfortable with the process.</p></div>
+        </div>
+        <div class="faq-item reveal delay-5">
+          <button class="faq-question" onclick="toggleFaq(this)">Is there a subscription or long-term commitment?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+          <div class="faq-answer"><p>Absolutely not. Every Precision Telemed plan is month-to-month. There are no subscriptions, no long-term contracts, and no cancellation fees. You can pause or stop at any time. Most patients see the best results after 3–6 months of consistent use, but you are never locked in. We believe you should stay because the results are working — not because you're trapped.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">What states is Sermorelin therapy available in?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+          <div class="faq-answer"><p>Precision Telemed is available in all 50 states. Our network of board-certified physicians are licensed across the country, and our partner 503A pharmacy ships nationwide with temperature-controlled cold-chain delivery. Wherever you are in the US, you can complete your assessment, consult with a doctor, and receive your Sermorelin at home.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="final-cta__bg">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=2560&q=80" alt="" role="presentation" />
+    </div>
+    <div class="final-cta__glow"></div>
+    <div class="container">
+      <div class="final-cta__inner">
+        <div class="eyebrow eyebrow--light reveal" style="justify-content:center; margin-bottom:1.5rem;"><span class="eyebrow__dot"></span> Ready to Begin?</div>
+        <h2 class="final-cta__title reveal delay-1">Reclaim Your Energy,<br/>Muscle &amp; Metabolism</h2>
+        <p class="final-cta__sub reveal delay-2">Stop accepting fatigue, poor sleep, and stubborn body fat as inevitable parts of aging. Starting at just $199/mo — Precision Telemed's Sermorelin program gives your body the signal it needs to restore its own natural growth hormone, safely and naturally.</p>
+        <div class="final-cta__ctas reveal delay-3">
+          <a href="https://precisiontelemed.com/start-anti-aging-program-sermorelin/" target="_blank" rel="noopener" class="btn btn--white btn--lg btn--pulse">
+            Check My Eligibility &mdash; Free &nbsp;<i class="fas fa-arrow-right btn__arrow"></i>
+          </a>
+          <a href="https://precisiontelemed.com/start-anti-aging-program-sermorelin/" target="_blank" rel="noopener" class="btn btn--ghost-white btn--lg">Consult a Doctor First</a>
+        </div>
+        <div class="final-cta__trust reveal delay-4">
+          <span class="fct-item"><i class="fas fa-shield-halved"></i> HIPAA Compliant</span>
+          <span class="fct-item"><i class="fas fa-user-doctor"></i> Board-Certified MDs</span>
+          <span class="fct-item"><i class="fas fa-flask"></i> 503A Pharmacy</span>
+          <span class="fct-item"><i class="fas fa-truck-fast"></i> Free Shipping</span>
+          <span class="fct-item"><i class="fas fa-rotate-left"></i> Cancel Anytime</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+
+
+
+  <script>
+    function closeMobileNav() { navOpen = false; mobileNav.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); }
+    window.closeMobileNav = closeMobileNav;
+    document.addEventListener('click', e => { if (navOpen && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) closeMobileNav(); });
+
+    // Reveal on scroll
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // Counters
+    function animateCounter(el, target, duration) {
+      let start = 0; const step = target / (duration / 16);
+      const timer = setInterval(() => { start = Math.min(start + step, target); el.textContent = Math.floor(start).toLocaleString(); if (start >= target) clearInterval(timer); }, 16);
+    }
+    const counterObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target, parseInt(e.target.dataset.target, 10), 1400); counterObs.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.counter[data-target]').forEach(el => counterObs.observe(el));
+
+    // Progress bars
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.style.width = e.target.dataset.width + '%'; barObs.unobserve(e.target); } });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.data-bar-fill').forEach(el => barObs.observe(el));
+
+    // FAQ
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item'), answer = item.querySelector('.faq-answer'), isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-answer').style.maxHeight = '0'; });
+      if (!isOpen) { item.classList.add('open'); answer.style.maxHeight = answer.scrollHeight + 'px'; }
+    }
+    window.toggleFaq = toggleFaq;
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return; e.preventDefault();
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - (2.5 * 16 + 4.25 * 16 + 24), behavior: 'smooth' });
+      });
+    });
+
+    // Login button visibility
+    const loginBtn = document.getElementById('nav-login');
+    window.addEventListener('scroll', () => { if (loginBtn) loginBtn.style.display = window.scrollY > 300 ? 'inline-flex' : 'none'; }, { passive: true });
+
+    // Hero entry animation
+    window.addEventListener('load', () => {
+      document.querySelectorAll('#hero .reveal').forEach((el, i) => setTimeout(() => el.classList.add('visible'), i * 140 + 100));
+    });
+
+    // Doctors Carousel
+    (() => {
+      const track = document.getElementById('doc-track');
+      const trackWrap = document.getElementById('doc-track-wrap');
+      const prevBtn = document.getElementById('doc-prev');
+      const nextBtn = document.getElementById('doc-next');
+      const dotsWrap = document.getElementById('doc-dots');
+      const progBar = document.getElementById('doc-progress-bar');
+      const cards = track.querySelectorAll('.doctor-card');
+      const TOTAL = cards.length, CARD_W = 300, GAP = 24;
+      let currentIdx = 0, visibleCount = 1, autoTimer = null;
+
+      function getVisibleCount() { return Math.max(1, Math.floor((trackWrap.clientWidth + GAP) / (CARD_W + GAP))); }
+      function buildDots() {
+        dotsWrap.innerHTML = '';
+        const pages = Math.max(1, TOTAL - visibleCount + 1);
+        for (let i = 0; i < pages; i++) {
+          const btn = document.createElement('button');
+          btn.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+          btn.setAttribute('role', 'tab'); btn.setAttribute('aria-label', `Go to doctor ${i + 1}`);
+          btn.addEventListener('click', () => goTo(i)); dotsWrap.appendChild(btn);
+        }
+      }
+      function updateState() {
+        const pages = Math.max(1, TOTAL - visibleCount + 1);
+        track.style.transform = `translateX(-${currentIdx * (CARD_W + GAP)}px)`;
+        cards.forEach((c, i) => c.classList.toggle('active', i === currentIdx));
+        dotsWrap.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === currentIdx));
+        progBar.style.width = Math.max(14, pages > 1 ? (currentIdx / (pages - 1)) * 100 : 100) + '%';
+        prevBtn.disabled = currentIdx === 0; nextBtn.disabled = currentIdx >= pages - 1;
+      }
+      function goTo(idx) { const pages = Math.max(1, TOTAL - visibleCount + 1); currentIdx = Math.max(0, Math.min(idx, pages - 1)); updateState(); resetAuto(); }
+      prevBtn.addEventListener('click', () => goTo(currentIdx - 1));
+      nextBtn.addEventListener('click', () => goTo(currentIdx + 1));
+      trackWrap.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') goTo(currentIdx - 1); if (e.key === 'ArrowRight') goTo(currentIdx + 1); });
+
+      let dragStartX = 0, isDragging = false, dragOffset = 0;
+      function dragStart(x) { isDragging = true; dragStartX = x; track.style.transition = 'none'; }
+      function dragMove(x) { if (!isDragging) return; dragOffset = x - dragStartX; track.style.transform = `translateX(${-(currentIdx * (CARD_W + GAP)) + dragOffset}px)`; }
+      function dragEnd() { if (!isDragging) return; isDragging = false; track.style.transition = ''; if (dragOffset < -60) goTo(currentIdx + 1); else if (dragOffset > 60) goTo(currentIdx - 1); else updateState(); dragOffset = 0; }
+      trackWrap.addEventListener('mousedown', e => dragStart(e.clientX));
+      window.addEventListener('mousemove', e => { if (isDragging) dragMove(e.clientX); });
+      window.addEventListener('mouseup', () => dragEnd());
+      trackWrap.addEventListener('touchstart', e => dragStart(e.touches[0].clientX), { passive: true });
+      trackWrap.addEventListener('touchmove', e => dragMove(e.touches[0].clientX), { passive: true });
+      trackWrap.addEventListener('touchend', () => dragEnd());
+
+      function autoPlay() { autoTimer = setInterval(() => { const pages = Math.max(1, TOTAL - visibleCount + 1); goTo(currentIdx >= pages - 1 ? 0 : currentIdx + 1); }, 4500); }
+      function resetAuto() { clearInterval(autoTimer); autoPlay(); }
+      trackWrap.addEventListener('mouseenter', () => clearInterval(autoTimer));
+      trackWrap.addEventListener('mouseleave', () => autoPlay());
+      let resizeTimer;
+      window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => { visibleCount = getVisibleCount(); buildDots(); goTo(Math.min(currentIdx, Math.max(0, TOTAL - visibleCount))); }, 150); });
+
+      visibleCount = getVisibleCount(); buildDots(); updateState(); autoPlay();
+
+      const docSection = document.querySelector('.doctors-section');
+      new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { docSection.querySelectorAll('.reveal').forEach((el, i) => setTimeout(() => el.classList.add('visible'), i * 120)); } });
+      }, { threshold: 0.1 }).observe(docSection);
+    })();
+
+    /* ── Scarcity countdown — persists across visits via localStorage ── */
+    (function() {
+      const STORAGE_KEY = 'pt_serm_slots';
+      const TIMER_KEY   = 'pt_serm_next_drop';
+      const MIN_SLOTS   = 3;
+      const MAX_SLOTS   = 12;
+
+      function getSlots() {
+        const stored = parseInt(localStorage.getItem(STORAGE_KEY), 10);
+        if (!stored || isNaN(stored)) {
+          const initial = 7 + Math.floor(Math.random() * (MAX_SLOTS - 7 + 1));
+          localStorage.setItem(STORAGE_KEY, initial);
+          const interval = (4 + Math.random() * 4) * 60 * 60 * 1000;
+          localStorage.setItem(TIMER_KEY, Date.now() + interval);
+          return initial;
+        }
+        return stored;
+      }
+
+      function maybeDecrement(slots) {
+        const nextDrop = parseInt(localStorage.getItem(TIMER_KEY), 10);
+        if (!nextDrop || Date.now() >= nextDrop) {
+          const newSlots = Math.max(MIN_SLOTS, slots - 1);
+          localStorage.setItem(STORAGE_KEY, newSlots);
+          const interval = (4 + Math.random() * 4) * 60 * 60 * 1000;
+          localStorage.setItem(TIMER_KEY, Date.now() + interval);
+          return newSlots;
+        }
+        return slots;
+      }
+
+      function renderSlots(n) {
+        const floatingText = document.getElementById('floating-scarcity-text');
+        const stickyNum    = document.getElementById('sticky-scarcity-num');
+        const label = n <= 4 ? 'Only ' + n + ' spots left — filling fast' : 'Only ' + n + ' spots left this week';
+        if (floatingText) floatingText.textContent = label;
+        if (stickyNum)    stickyNum.textContent = n;
+      }
+
+      renderSlots(maybeDecrement(getSlots()));
+    })();
+  </script>
+
+</div><!-- /#page-wrap -->
+</body>
+</html>

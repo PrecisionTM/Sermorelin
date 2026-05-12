@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 130" width="480" height="130">
+  <defs>
+    <!-- Gradient for ProRx text (light sage to dark sage) -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B2C9AE;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8FAF8A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B8F66;stop-opacity:1" />
+    </linearGradient>
+    <!-- Gradient for P icon outer ring -->
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a6b58;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d5230;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background transparent -->
+
+  <!-- ── P Icon ── -->
+  <!-- Outer circle (dark sage) -->
+  <circle cx="65" cy="62" r="52" fill="url(#iconGrad)" />
+  <!-- Inner cutout circle -->
+  <circle cx="65" cy="62" r="38" fill="#ffffff" />
+  <!-- P stem (dark sage) -->
+  <rect x="38" y="30" width="16" height="64" rx="4" fill="#3d5230" />
+  <!-- P bowl (dark sage filled arc) -->
+  <path d="M 54 30 Q 96 30 96 54 Q 96 78 54 78 L 54 62 Q 78 62 78 54 Q 78 46 54 46 Z" fill="#3d5230" />
+  <!-- Arrow/chevron accent (light sage) pointing right -->
+  <polygon points="100,52 114,62 100,72" fill="#8FAF8A" />
+
+  <!-- ── ProRx Wordmark ── -->
+  <!-- "Pro" in sage gradient with italic style -->
+  <text x="132" y="78"
+    font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-size="62"
+    font-weight="800"
+    font-style="italic"
+    letter-spacing="-1"
+    fill="url(#textGrad)">Pro</text>
+
+  <!-- "Rx" in darker sage -->
+  <text x="272" y="78"
+    font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-size="62"
+    font-weight="800"
+    font-style="italic"
+    letter-spacing="-1"
+    fill="#3d5230">Rx</text>
+
+  <!-- Drop shadow / outline effect for depth -->
+  <text x="134" y="80"
+    font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-size="62"
+    font-weight="800"
+    font-style="italic"
+    letter-spacing="-1"
+    fill="none"
+    stroke="#2d4a2a"
+    stroke-width="1"
+    opacity="0.3">ProRx</text>
+
+  <!-- ── Subtitle ── -->
+  <text x="132" y="106"
+    font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-size="13"
+    font-weight="600"
+    letter-spacing="3.5"
+    fill="#6B8F66">503B OUTSOURCING FACILITY</text>
+</svg>
